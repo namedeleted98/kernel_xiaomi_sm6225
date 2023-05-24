@@ -1,0 +1,1793 @@
+linux-android-xiaomi-spes (0.0.0+git20230521204816.4b225fc.spes.r.oss) spes-r-oss; urgency=medium
+
+  [ muralivijay ]
+  * techpack: Import audio from LA.UM.9.15.r1-04100-KAMORTA.QSSI12.0
+  * techpack: Import camera from LA.UM.9.15.r1-04100-KAMORTA.QSSI12.0
+  * techpack: Import display from LA.UM.9.15.r1-04100-KAMORTA.QSSI12.0
+  * techpack: Import data from LA.UM.9.15.r1-04100-KAMORTA.QSSI12.0
+  * techpack: Import video from LA.UM.9.15.r1-04100-KAMORTA.QSSI12.0
+  * Drivers:touchscreen: Remove whitespaces by xiaomi  that causes build warning.
+  * Nuke spes NFC driver
+  * drivers: Fix missing includes
+  * drivers:gpu: Import Missing xiaomi Changes
+  * techpack:display: Import xiaomi changes from mojito-r-oss.
+  * drivers:staging:qcacld-3.0: Import from LA.UM.9.15.r1-04100-KAMORTA.QSSI12.0.
+  * drivers:staging:fw-api: Import from LA.UM.9.15.r1-04100-KAMORTA.QSSI12.0
+  * driver:staging:qca-wifi-host-mm: Disable unused case.
+  * techpack:audio: Import xiaomi changes from spes-r-oss.
+  * driver:misc:st2lnfc: fix Compile.
+  * drivers:power:supply:sh366101_fg: Fix missing include.
+  * techpack:display: Add Build support for fog.
+  * Revert "qcacld-3.0: Fix MAC address fallback when generation fails"
+
+  [ Danny Baumann ]
+  * techpack: display: Restore previous display brightness when enabling display.
+
+  [ stic-server-open ]
+  * techpack: audio: Fix compilation warning
+
+  [ electimon ]
+  * techpack: audio: Setup build makefiles for bengal
+  * Subject: [PATCH] techpack: audio: Setup build makefiles for spes and fog
+
+  [ Julian Liu ]
+  * techpack: elliptic: Correct calibration file path
+
+  [ Danny Lin ]
+  * techpack: audio: Remove redundant -Werror flags
+  * techpack: audio: Remove build timestamps
+  * techpack: Integrate Qualcomm data-kernel package
+  * qcacld-3.0: Fix regulatory domain country names.
+  * qcacld-3.0: Remove explicit -Werror flags
+  * ASoC: spes: fog: Build all modules into the kernel
+
+  [ HeroBuxx ]
+  * drivers: staging: Import 'qca-wifi-host-cmn' from 'LA.UM.9.15.r1-07300-KAMORTA.QSSI13.0'
+  * drivers: qca-wifi-host-cmn: Fix deprecated function declaration
+
+  [ UtsavBalar1231 ]
+  * techpack: video: msm: vidc: Fix format-extra-args warning
+  * staging: qcacld-3.0: Fix strict-prototypes warnings in function declaration
+
+  [ fadlyas07 ]
+  * techpack: camera: Declare cam_ope_mgr_hw_close_u return type
+  * techpack: data: Fix error cause a function declaration is deprecated
+  * drivers: qca-wifi-host-cmn: Fix error cause a function declaration is deprecated
+
+  [ Luca Stefani ]
+  * qcacld: Disable build timestamp
+  * arm64: configs: vendor: Enable QCACLD for spes and fog.
+
+  [ LuK1337 ]
+  * drivers: staging: Include qcacld-3.0 source
+
+  [ Karthik Kantamneni ]
+  * qcacld-3.0: Fix race during peer deletion in roaming scenario
+
+  [ Peter Cai ]
+  * techpack: audio: Correct symlinks
+  * qcacld-3.0: Fix MAC address fallback when generation fails
+
+  [ Park Ju Hyung ]
+  * qcacld-3.0: Nuke Kconfig-based configuration entirely.
+  * qcacld-3.0: Always force user build.
+  * qcacld-3.0: Do not manually re-enable -Wmaybe-uninitialized.
+  * qcacld-3.0: Initialize variables to avoid errors during compilation.
+  * qcacld-3.0: Discard wlan_boot sysfs code on !CONFIG_MODULES.
+  * qcacld-3.0: Tone down debugging.
+  * qcacld: nuke rx_wakelock code entirely
+
+  [ Remil Ram ]
+  * scripts: update gcc-wrapper to python3
+
+  [ Nick Desaulniers ]
+  * platform: msm: gsi: Fix symbol versioning failure for gsi_write_channel_scratch
+
+  [ Christian Stewart ]
+  * Subject: [PATCH] HACK: fix broken relative include paths.
+
+  [ Rashed Abdel-Tawab ]
+  * Set correct techpack header install directory.
+
+  [ starlight5234 ]
+  * techpack: audio: Add support to load bengal configs
+
+  [ Sultan Alsawaf ]
+  * msm: camera: Stub out the camera_debug_util API and compile it out
+
+  [ franciscofranco ]
+  * msm: vidc: disable debug logs
+
+  [ lucaswei ]
+  * video: hfi_iris2: Fix -Wpointer-to-int-cast
+
+  [ Lakshmi Narayana Kalavala ]
+  * drm/msm/sde: fix watchdog vsync timer configuration
+
+  [ engstk ]
+  * techpack: qdsp6v2: Allow 320K AAC encoding
+
+  [ Prashant Singh ]
+  * msm/sde: prevent double register of input handler
+
+  [ Demon000 ]
+  * techpack: camera: Fix memory leak.
+
+  [ Thierry Strudel ]
+  * techpack: makefile: do not export all the variables
+
+  [ gongjingzhou ]
+  * Kernel: Xiaomi kernel changes for Redmi Note 11 Android R
+
+  [ Yatish Kumar Singh ]
+  * serial: msm_geni_serial: Add Workqueue to dump the registers
+  * serial: msm_geni_serial: Enable SW flow on in runtime suspend
+  * serial: msm_geni_serial: Reduce stale delay added in stop_rx_sequencer
+
+  [ Linux Build Service Account ]
+  * Merge 286149f56cba856e5b28d63b0bc4c5b4bb4a9aef on remote branch
+  * Merge 6cb02c4041e98d9edcbabdbe5a6ece864d507013 on remote branch
+  * Merge 2461e66b3e460c2ed0984617207432880cd42b0e on remote branch
+  * Merge 71aeb411c1f2a024ec1ab86f4b46f3612d70e87f on remote branch
+  * Merge f01334078cef8a8b105618b2326651e706b0ba82 on remote branch
+  * Merge 75edf721cc8a77fb6a006943692660434a7123e8 on remote branch
+  * Merge d45271c30a6fc2439a2b73c8a56b487cfa283d8a on remote branch
+  * Merge fe245fe818638e1657dd894381a489a7799edcf8 on remote branch
+  * Merge "defconfig: Enable CONFIG_ION_SYSTEM_HEAP for bengal"
+  * Merge 5e1dd0fa050fbb08ef6f27a5399a5e801b88d8f2 on remote branch
+  * Merge 28ba9d136c56f83b36908ec6678191c74520d7d0 on remote branch
+  * Merge 2d773a4e210fc1367b43f7018af8b3786c6a2840 on remote branch
+
+  [ qctecmdr ]
+  * Merge "cnss2: Add api to get pci reg dump for hang data"
+  * Merge "power: smb1398-charger: Toggle UVLO-config on USB removal and shutdown"
+  * Merge "HID: qvr: Remove device pointer on disconnect"
+  * Merge "f2fs: prepare a waiter before entering io_schedule"
+  * Merge "msm: kgsl: Add apb_pclk to the clock list and increase max clock count"
+  * Merge "power: smb1355: Extend minoff-time and dead-time for SMB1355"
+  * Merge "defconfig: arm64: msm: enable CONFIG_RB5_FAN_CONTROLLER"
+  * Merge "trace: Fix race in trace_open and buffer resize call"
+  * Merge "usb: dwc3-msm: Rectify 64 bit dma address programming for GSI"
+  * Merge "uapi: ipa: Support uc header proc ctx for DSCP insertion"
+  * Merge "msm: ADSPRPC: Reset debug buffer allocation check flag"
+  * Merge "msm: ipa3: Add change to increase timeout value"
+  * Merge "USB: configfs: Clear deactivation flag in configfs_composite_unbind()"
+  * Merge "USB: uvc_video: Check for return value before halt bulk endpoint"
+  * Merge "msm: ADSPRPC: Add check to avoid out of bound scenario"
+  * Merge "msm: ipa: add check to see if pm client is not NULL"
+  * Merge "usb: gadget: f_uvc: Fix crash on disconnect/connect during streaming"
+  * Merge "qdss_bridge: fix use-after-free is on cdev_put"
+  * Merge "cnss2: Fix KW issues for pointer check and variable init"
+  * Merge "usb: gadget: f_uvc: Fix video streaming quality issues"
+  * Merge "qseecom: use legacy command for slateapp"
+  * Merge "msm: npu: Prevent unpaired power vote/unvote via sysfs node"
+  * Merge "USB: gadget: Add support for superspeed plus for UAC2 & UVC"
+  * Merge "usb: gadget: uvc: Update frame size as per frame type"
+  * Merge "USB: f_uac2: Update terminal types as mic and speaker"
+  * Merge "defconfig: kona: Enable USB UVC drivers"
+  * Merge "msm: kgsl: Poll a6x crashdumper register memory for status"
+  * Merge "ANDROID: vfs: d_canonical_path for stacked FS"
+  * Merge "f2fs: should avoid inode eviction in synchronous path"
+  * Merge "walt: Add window rollover trace event"
+  * Merge "scsi: ufshcd: Fix double release of hba"
+  * Merge "wil6210: add ability to help debug tx latency"
+  * Merge "Merge android-4.19-stable.157 (8ee67bc) into msm-4.19"
+  * Merge "spi: spi_qsd: Add ipc logging for spi driver"
+  * Merge "diag: Add support for querying diagid for wpss subsystem"
+  * Merge "icnss2: Clear SMP2P data during SSR"
+  * Merge "Revert "msm: kgsl: Add GPUCC register dumps to A6xx GPU snapshot""
+  * Merge "serial: msm_geni_serial: Perform Abort sequence for cancel failure"
+  * Merge "spi: spi-geni-qcom: Configure DFS index and clk before doing set rate"
+  * Merge "spi: spi-geni-qcom: Calculate transfer timeout dynamically"
+  * Merge "mmc: sdhci-msm: read this reg IPCAT_MINOR_MASK to sdhc host"
+  * Merge "icnss2: change to avoid device crash if RF card is not present"
+  * Merge "pci: msm: Add support for linkdown recovery on hot reset"
+  * Merge "cnss2: Add code to fix a print error in update timestamp api"
+  * Merge "leds: qpnp-flash-v2: Fix out-of-bound array access"
+  * Merge "net: qualcomm: rmnet: memset before sending genl response"
+  * Merge "msm: kgsl: Correct the refcount on current process PID"
+  * Merge "icnss: Add code to downdload qdss trace config"
+  * Merge "msm: kgsl: Protect the memdesc->gpuaddr in SVM use cases"
+  * Merge "usb: gadget: composite: Add spinlock protection for usb string descriptor"
+  * Merge "icnss: Add code to send qdss mode and sysfs interface for qdss"
+  * Merge "cnss2: Add delay for pci link training retries"
+  * Merge "msm: adsprpc: null pointer check for sctx"
+  * Merge "net: qrtr: print error case for qrtr receive"
+  * Merge "net: sch_generic: fix the missing new qdisc assignment"
+  * Merge "mm: skip speculative path for non-anonymous COW faults"
+  * Merge "soc: qcom: socinfo: Add support for msm8917 soc-id"
+  * Merge "usb: gadget: gsi: Ensure the doorbell is blocked before suspend"
+  * Merge "regulator: cpr: add snapshot of cpr-regulator driver"
+  * Merge "ARM: qcom: Add board config support for qm215"
+  * Merge "clk: qcom: mdss: Enable mdss 28lpm pll driver"
+  * Merge "coresight: cti: Solve boot up issue"
+  * Merge "msm: pcie : Notify client driver on reading FF's"
+  * Merge "serial: msm_geni_serial: Correct start rx sequence"
+  * Merge "msm: kgsl: Use pid struct to find the process to reclaim"
+  * Merge "usb: phy: qusb2: Update tune value for host mode"
+  * Merge "arm64: fix bootloader_memory_limit"
+  * Merge "regulator: qpnp-lcdb: fix race between SC interrupt and lcdb enable"
+  * Merge "qseecom: Add boundary checks between two subsequent fields"
+  * Merge "cnss2: retry mhi suspend in case packets are pending in MHI layer"
+  * Merge "msm:ADSPRPC :Fix to avoid Use after free in fastrpc_internal_munmap"
+  * Merge "cnss2: Dump mhi debug registers on receiving mhi WAKE event cb"
+  * Merge "cnss2: Increase prealloc table to satisfy latest driver requirement"
+  * Merge "mhi: core: Check PCIe link status before accessing MHI registers"
+  * Merge "msm: pci: print PCIE LTSSM state at DRV suspend and resume"
+  * Merge "diag: Handle drops for diag over rpmsg"
+  * Merge "drivers: irqchip: qcom: Add MSM8937 pin data for MPM"
+  * Merge "qcom: step-chg-jeita: Add support for jeita fcc scaling"
+  * Merge "nl80211: add error messages to nl80211_parse_chandef()"
+  * Merge "serial:msm_geni_serial: Handling the cts counter in uart driver"
+  * Merge "power: smb5-lib: Add additional check to exit charge-termination WA"
+  * Merge "defconfig: set CONFIG_HZ = 250 for Bengal"
+  * Merge "ARM: msm: Add board config support for 32 bit bengal apq iot"
+  * Merge "cnss_prealloc: Add a 128kB to prealloc pool"
+  * Merge "diag: Read from USB without holding spinlock"
+  * Merge "net: qrtr: Excessive logging casuing boot failure"
+  * Merge "pinctrl: Add support for msm8917 pinctrl"
+  * Merge "cnss2: WAR to trigger self-recovery for link recover callback"
+  * Merge "coresight: Make coresight functions as inline"
+  * Merge "msm: pcie : Extend link recovery for config space access failure"
+  * Merge "fastrpc : fastrpc porting for kernel 4.19 SPF targets"
+  * Merge "diag: Update event and log mask code latest range"
+  * Merge "kernel: driver: Added support msm_smd_pkt driver"
+  * Merge "rpmsg: qcom_smd: allow smd create device if remote state is closing"
+  * Merge "dt-bindings: clock: Add support for GCC clock ids for SDM429"
+  * Merge "bindings: clock: qcom: Add support for clock IDs for QM215"
+  * Merge "wigig_sensing: treat data ready as deep sleep exit when needed"
+  * Merge "defconfig: Initial defconfig files for MSM8937_32go"
+  * Merge "backlight: qcom-spmi-wled: Change the SYNC toggle sequence"
+  * Merge "media/dvb: Deregister dma buffers fom shmbridge"
+  * Merge "Merge tag 'refs/tags/TDK-Robotics-RB4-0.1-test3'"
+  * Merge "msm: kgsl: Show max gpu temperature"
+  * Merge "clk: qcom: smd-rpm: Add RPM-SMD clock support for QM215"
+  * Merge "defconfig: Enable Incremental FS support for msm8937_32go"
+  * Merge "fs: crypto: Add support for legacy pfk based FBE"
+  * Merge "power: smb5-lib: Query POWER_SUPPLY_PROP_VOLTAGE_MAX_DESIGN"
+  * Merge "drivers: char: msm_smd_pkt: Return error in case driver is not ready"
+  * Merge "regulator: qpnp-lcdb: Disable step voltage ramp for PM8150L V3"
+  * Merge "usb: pd: Add support to disable pps capability"
+  * Merge "usb: gadget: Clear transfer started flag if endxfer cmd times out"
+  * Merge "usb: dwc3: gadget: Replace dev with its parent sysdev in ep_disable"
+  * Merge "defconfig: Enable CPR Regulator for msm8937go"
+  * Merge "diag: Acquire spinlock for list delete operation"
+  * Merge "rpm-smd: Remove redundant spinlocks which are not required"
+  * Merge "usb: dwc3: Issue ENDTRANSFER cmd on ep0 unconditionally"
+  * Merge "usb: gadget: f_mass_storage: Remove runtime async resume"
+  * Merge "backlight: qcom-wled: Add "qcom,sync-dly" device tree property"
+  * Merge "USB: pd: Add support for enabling PD2.0 only as source"
+  * Merge "drivers: iio: enable compile for TDK sensor"
+  * Merge "defconfig: Enable EXT4 configs"
+  * Merge "drivers: irqchip: qcom: Add MSM8953 pin data for MPM"
+  * Merge "icnss: Allow register/unregister driver execution in serial manner"
+  * Merge "msm: ADSPRPC: Substitute vfs check with flags"
+  * Merge "drivers: char: reset signal support for smd channels"
+  * Merge "crypto: Fix possible stack out-of-bound error"
+  * Merge "Revert "cnss2: Dump mhi debug regs on receiving mhi WAKE event cb""
+  * Merge "mmc: core: Set cqe_enabled flag correctly"
+  * Merge "power: smb2: Enable read/writing of Type-C Rp value"
+  * Merge "serial: msm_geni_serial: Fix false warning for reset failure"
+  * Merge "qcom: fg-memif: correct timeout condition for memory grant"
+  * Merge "cfg80211: export regulatory_hint_user() API"
+  * Merge "msm: mdss: update MDSS DSI ULPS configuration"
+  * Merge "msm: kgsl: Change start variable type to int in kgsl_iommu_add_global"
+  * Merge "clk: qcom: mdss: add dsi phy 12nm clock"
+  * Merge "usb: f_diag: Replace ERROR with pr_err"
+  * Merge "msm: pcie: Restore BME for RC after link_down recovery on SBR"
+  * Merge "clk: qcom: debugcc: Add debugcc support for QM215"
+  * Merge "Kconfig: enable default config of cpu freq qcom for msm8953"
+  * Merge "usb: dwc3: Enable parkmode for Gen1 controllers"
+  * Merge "coresight: disable the path when enable source link fail"
+  * Merge "rpmsg: smd: Signal the TX channel that smd driver read data"
+  * Merge "diag: Sanitize the mempools with pool data size check"
+  * Merge "Add support for new versions for BT chip"
+  * Merge "usb: misc: nb7vpq904m: update suspend and resume function"
+  * Merge "misc: add qrc ioctl functions"
+  * Merge "socinfo: Add socinfo support for sdm450"
+  * Merge "smcinvoke: Update the correct parameters and result from qseecom"
+  * Merge "clk: qcom: mdss: update mdss-dsi-28lpm clk names"
+  * Merge "defconfig: enable MDSS PLL config for MSM8937_32go"
+  * Merge "dt-bindings: clock: Add support for CPUCC clock ids for QM215"
+  * Merge "kona_defconfig: Enable hidraw config"
+  * Merge "drivers: char: Fix compilation error for smd pkt driver"
+  * Merge "diag: Enable graceful transfer of transport"
+  * Merge "iio: qcom-rradc: Update logic to monitor health of RRADC peripheral"
+  * Merge "msm: gsi: Using kzalloc instead of devm_kzalloc"
+  * Merge "clk: qcom: clk-debug: Add support to dump GDSC registers"
+  * Merge "usb: dwc3: gadget: Prevent double free scenario for cancelled_list"
+  * Merge "usb: dwc3: core: Add ipc logs when sg lists are used"
+  * Merge "msm: kgsl: Set correct values for SMMU protect register for A3xx"
+  * Merge "usb: gadget: Add snapshot of ChipIdea driver"
+  * Merge "iio: ch101: Return -ENODEV when get expander GPIO failed"
+  * Merge "qdss_bridge: fix kfree issue"
+  * Merge "qseecom: Check error when allocating coherent buffer"
+  * Merge "qseecom: Update the error val check"
+  * Merge "rtc: rtc-pm8xxx: add support for PM8916 RTC"
+  * Merge "clk: qcom: clk-pll: Add support for HF PLL Ops"
+  * Merge "msm: npu: Don't send interrupt if command has been consumed"
+  * Merge "msm: ipa: Send actual DL flt rule length to Q6"
+  * Merge "clk: qcom: mdss: Add check to read the gdsc status"
+  * Merge "msm: mdss: dsi: set backlight handle to NULL in error case"
+  * Merge "rpmsg: qcom_smd: Add NO_SUSPEND flag for smd edge irq"
+  * Merge "tty: serial: msm_geni_serial: Resolve race btw stop rx and cancel rx"
+  * Merge "msm: ipa: Enable wdi3 API in ipa3 config"
+  * Merge "msm: kgsl: Access map_count only if entry is successfully allocated"
+  * Merge "defconfig: Enable chipidea USB controller configs"
+  * Merge "leds: vibrator: Add snapshot of vibrator driver"
+  * Merge "msm: sde: Update rotator OT settings for sdm660"
+  * Merge "mm: cma: Print correct request pages"
+  * Merge "wcnss: Add wcnss snapshot to msm-4.19"
+  * Merge "platform: msm: Add USB BAM support to ChipIdea/RMNET"
+  * Merge "qtee_shmbridge: update copyright"
+  * Merge "diag: Update event and log mask code ranges"
+  * Merge "arm-smmu: add bitmap for secure context banks"
+  * Merge "icnss2: Add handler for SMMU faults"
+  * Merge "qseecom: Add flush_work based on flag"
+  * Merge "defconfig: Add clock controller support for QM215"
+  * Merge "wcnss: Update pm wake api's for 4.19 kernel"
+  * Merge "msm: ipa: fix race condition on PM vote on sys pipes"
+  * Merge "msm: ipa3: Fix to null pointer access"
+  * Merge "radio: iris: Add snapshot of iris FM radio support"
+  * Merge "ANDROID: xt_qtaguid: Remove tag_entry from process list on untag"
+  * Merge "fbdev: msm: update event callback function to perform ESD check"
+  * Merge "msm: ipa: correct the pointer in idr for FnR stats counter"
+  * Merge "dt-bindings: iio: Add scale function for QM215 batt therm"
+  * Merge "defconfig: Add WCNSS related config parameter"
+  * Merge "power: smb5-lib: Fix race conditions for typec power role"
+  * Merge "defconfig: enable PSI config for MSM8937_32go"
+  * Merge "net/sched: fix race between deactivation and dequeue for NOLOCK qdisc"
+  * Merge "dm verity: skip verity work on I/O errors when system is shutting down"
+  * Merge "msm: mdss: update the DSI 12nm PHY programming sequence"
+  * Merge "msm: mdss: update the power down sequence for DSI 12nm PHY"
+  * Merge "soc: qcom: Add support for MSM_TZ_SMMU"
+  * Merge "spmi: spmi-pmic-arb-debug: replace ioremap_resource with ioremap"
+  * Merge "iommu/arm-smmu: Do not write to slave side protected context banks"
+  * Merge "qcom-geni-se: Avoid dumping of GENI registers in console"
+  * Merge "clk: qcom: mdss: fix blank / unblank for DSI 28nm pll"
+  * Merge "net: ethernet: Add snapshot of RMNET BAM driver"
+  * Merge "scsi: ufs: Fix IOCTL error checking for input buffer"
+  * Merge "drivers: soc: qcom: Fix compilation errors"
+  * Merge "iommu: Do not set COHERENT flag for secure pagetable allocation"
+  * Merge "diag: Prevent possible out of bound copy to userspace"
+  * Merge "msm: adsprpc: Clean DMA handles maps in case of  error"
+  * Merge "soc: qcom: smp2p: Add proper retrigger detection"
+  * Merge "cfg80211: Adjust 6 GHz frequency to channel conversion"
+  * Merge "iio: spmi-vadc: Add option to specify scale-fn-type in devicetree"
+  * Merge "clk: qcom: gcc: Add GPLL3 derived frequencies for qm215"
+  * Merge "clk: qcom: debugcc: Add cpucc debugcc support for QM215"
+  * Merge "Set the default slot for Full Disk Encryption key to 31"
+  * Merge "defconfig: Enable USB BAM configs"
+  * Merge "clk: qcom: mdss: Update VCO Clk enums for mdss-dsi-28lpm"
+  * Merge "defconfig: Initial defconfig files for MSM8937_32"
+  * Merge "RPMSG driver changes for FM in msm-4.19"
+  * Merge "iommu: Update function for ARM_MSM_SECURE io pagetable type"
+  * Merge "Don't use gpio_free() for output gpios"
+  * Merge "clk: qcom: gcc: Add gcc-mdss driver node support for QM215"
+  * Merge "defconfig: Add Radio_IRIS related config parameter"
+  * Merge "defconfig: Enable MDSS PLL config for msm8937_32"
+  * Merge "cnss2: Use unified API to get RDDM and recovery timeouts"
+  * Merge "cnss2: Add CNSS wrapper function for msm_pcie_reg_dump()"
+  * Merge "fbdev: msm: Enable mdss rotator driver"
+  * Merge "ice: add return value for functions where ICE is disabled"
+  * Merge "defconfig: Enable default-key driver for msm8937_32go"
+  * Merge "defconfig: Initial defconfig files for MSM8937_64"
+  * Merge "signal: Avoid corrupting si_pid and si_uid in do_notify_parent"
+  * Merge "defconfig: Enable MDSS PLL for msm8937"
+  * Merge "cnss2: Add support to populate device memory information"
+  * Merge "clk: qcom: mdss: update dsi 12nm clock driver"
+  * Merge "usb: gadget: Setup DMA ops for OTG's gadget devices"
+  * Merge "defconfig: msm: enable thermal efuse driver for kona iot"
+  * Merge "msm: ipa: fix potential race condition ioctls"
+  * Merge "msm: adsprpc: overflow vulnerability by race condition in adsprpc driver"
+  * Merge "defconfig: Enable USB BAM and SMD configs"
+  * Merge "cnss2: Check for BT Enable GPIO in QCA6390"
+  * Merge "include: uapi: Add charger specific headers for QM215"
+  * Merge "cnss2: Add sysfs support for configuring qtimer sync interval"
+  * Merge "iommu/arm-smmu: Allocate non-coherent memory for secure pagetables"
+  * Merge "icnss2: Avoid qmi register/unregister in case of qmi failure"
+  * Merge "icnss: Avoid qmi register/unregister in case of qmi failure"
+  * Merge "extcon: Initialize blocking notifier while registering"
+  * Merge "clk: qcom: smd-rpm: Add RPM-SMD clock support for SDM429"
+  * Merge "clk: qcom: gcc: Add GCC driver node support for SDM429"
+  * Merge "tcp: adjust rto_base in retransmits_timed_out()"
+  * Merge "usb: gadget: Add snapshot of USB RMNET Function driver"
+  * Merge "iommu/arm-smmu: add option to enable halt/resume of SMMU"
+  * Merge "msm: kgsl: Enable content protection for A505 GPU"
+  * Merge "config: enable new rmnet_data driver"
+  * Merge "config: enable new rmnet_data driver"
+  * Merge "mmc: sdio: Retune sdio after resume"
+  * Merge "defconfig: Enable WCNSS configs"
+  * Merge "diag: Update log mask code ranges"
+  * Merge "Add support for new HSP version"
+  * Merge "defconfig: msm: Enable dm-snapshot for msm8937_32go"
+  * Merge "defconfig: msm: Enable dm-snapshot for msm8937_32"
+  * Merge "defconfig: msm: Enable dm-snapshot for msm8937_64"
+  * Merge "mhi: dev: netdev: Set the mac header to 0 for skbs"
+  * Merge "defconfig: Enable SDM439 config"
+  * Merge "defconfig: Add Radio_IRIS related config parameter"
+  * Merge "spi: spi-geni-qcom: Set IOEB for MHI on SPI RX only case"
+  * Merge "drivers: rpmsg: fix to avoid dump stack in rpm-smd driver"
+  * Merge "regulator: qpnp-lcdb: Add n_voltages property for LCDB regulators"
+  * Merge "cnss2: Add CNSS_BUS_EVENT to report bus info"
+  * Merge "defconfig: Enable MSM8937 and SDM439 config"
+  * Merge "msm: mdss: Fix race condition while iommu mapping from DSI flow"
+  * Merge "config: enable rmnet_data, msm_rmnet_bam driver"
+  * Merge "defconfig: Enable default-key driver for msm8937_32"
+  * Merge "defconfig: Enable default-key driver for msm8937_64"
+  * Merge "i3c: i3c-master-qcom-geni: Force the xfer mode as DMA mode"
+  * Merge "msm: kgsl: Add A504 GPU support for SDM429"
+  * Merge "qseecom: Update correct parameters before sending to smcinvoke"
+  * Merge "diag: Prevent out of bound write while sending dci pkt to remote"
+  * Merge "diag: Use valid data_source for a valid token"
+  * Merge "msm: vidc_3x: Correct the arguments type to align with format string"
+  * Merge "defconfig: msm8937_32: Disable BUILD_ARM64_APPENDED_DTB_IMAGE flag"
+  * Merge "defconfig: msm8937_64: Disable BUILD_ARM64_APPENDED_DTB_IMAGE flag"
+  * Merge "msm: vidc_3x: correct the flags set for bus mode"
+  * Merge "ARM: decompressor: avoid speculative prefetch from protected regions"
+  * Merge "leds: qpnp-flash-v2: Add support to control flash ramp time"
+  * Merge "USB: composite: Increase the IN endpoint buffer allocation"
+  * Merge "clk: qcom: gcc: Change rate max values for SDM439"
+  * Merge "defconfig: arm64: Enable CONFIG_HID_NINTENDO for QM215"
+  * Merge "usb: gadget: f_cdev: Fix use after free of port in f_cdev"
+  * Merge "fbdev: msm: Handle rotator init failure correctly"
+  * Merge "diag: Copy length and buffer locally to send to userspace client"
+  * Merge "defconfig: arm: Enable CONFIG_HID_NINTENDO for QM215"
+  * Merge "diag: Update log and msg mask code ranges"
+  * Merge "icnss2: Add new ipc context to log smp2p related logs"
+  * Merge "soc: qcom: ssr: Enable the irqs before powering up subsystems"
+  * Merge "tty: Fix ->pgrp locking in tiocspgrp()"
+  * Merge "soc: qcom: bam_dmux: Abort open/close cmd during SSR"
+  * Merge "icnss2: Add support for MHI state info"
+  * Merge "msm: camera: Update csiphy data rate"
+  * Merge "rpmsg: qcom_smd: Add check for remote state in send api"
+  * Merge "input: qti-haptics: ensure valid pointer when calling kfree"
+  * Merge "msm: kgsl: Avoid flooding kernel log with invalid ioctl errors"
+  * Merge "Revert "ANDROID: security,perf: Allow further restriction of perf_event_open""
+  * Merge "msm: camera: Fix for HFR120 crash while"
+  * Merge "rpmsg: qcom_smd: Ensure ordering of channel info updates"
+  * Merge "defconfig: remove CONFIG_SECURITY_PERF_EVENTS_RESTRICT"
+  * Merge "soc: qcom: socinfo: Add soc information for khaje"
+  * Merge "defconfig: Enable ARCH_KHAJE"
+  * Merge "clk: qcom: clk-alpha-pll: Add support for FSM legacy mode"
+  * Merge " msm: ipa2: free the skb"
+  * Merge "msm: ipa3: Fix to copy num of rules from user space"
+  * Merge "defconfig: Enable config CONFIG_DEBUG_FS for msm8937_64"
+  * Merge "msm: kgsl: Fix snapshot collection for ib1"
+  * Merge "max31760: add support for additional registers"
+  * Merge "vidc_3x: Use static table governor for bus voting"
+  * Merge "defconfig: Enable config for msm8937_64"
+  * Merge "defconfig: Enable config for msm8937_32"
+  * Merge "vidc_3x: Change to avoid unloading firmware"
+  * Merge "ARM: defconfig: Enable config for msm8937_32go"
+  * Merge "usb_bam: Set default BAM type as DWC3 if not specified"
+  * Merge "dt-bindings: clock: Add support for KHAJE clock ids"
+  * Merge "ipa: Remove overwrite copy"
+  * Merge "clk: qcom: mdss: fix blank / un-blank issue for DSI 12nm pll"
+  * Merge "USB: dwc3: gadget: Queue data for 16 micro frames ahead in future"
+  * Merge "defconfig: Enable SDM429 configs"
+  * Merge "sysfs: ufs-qcom: Add sysfs entries for flashpvl"
+  * Merge "msm: ipa: Fix considering prefetch buf size when mapping"
+  * Merge "f_uac2: increase number of requests to 32 for UAC2"
+  * Merge "msm: drm: uapi: add rounded corner uapi"
+  * Merge "usb: f_qdss: Avoid wait_for_completion if qdss_disable is called"
+  * Merge "msm: camera: Add reset logic for snps phy"
+  * Merge "wil6210: check integrity of received AMSDU packets"
+  * Merge "tty: serial: msm: Add suspend resume support"
+  * Merge "defconfig: Enable config CONFIG_UTS_NS for msm8937_32"
+  * Merge "power: smb1398: Add support for SMB1394"
+  * Merge "msm: camera: QM215 delay during power up sequence"
+  * Merge "mmc: cmdq_hci: Notify sdhci for enhanced strobe"
+  * Merge "clk: qcom: Add enable_safe_config for gfx3d_clk_src"
+  * Merge "fbdev: msm: Increment commit count during null commit"
+  * Merge "dt-bindings: clock: gcc-khaje: Add support for USB3 MUX and BCR"
+  * Merge "wil6210: Drop unicast sub frame if part of a multicast amsdu"
+  * Merge "msm: kgsl: Flush mem workqueue and retry if failed to find SVM region"
+  * Merge "serial: msm_geni_serial: Add ioctl for sending uart error codes to BT host"
+  * Merge "soc: qcom: pil: Reuse carveout region for mdt header"
+  * Merge "msm: ipa3: Fix to change the tag process timeout value in cleanup"
+  * Merge "msm: npu: Use spinlock for ipc write to avoid context switch"
+  * Merge "clk: qcom: gpucc: Add Graphics Clock controller for KHAJE"
+  * Merge "msm: kgsl: Fix nr_removed calculation while reducing pools"
+  * Merge "rpmsg: qcom_smd: Return error if receive callback is not present"
+  * Merge "camera: smmu: fix for incorrect populated sids"
+  * Merge "fbdev: msm: Avoid race condition while iommu mapping from DSI flow"
+  * Merge "cnss2: Log SW_CTRL GPIO value if PCIe link training fails"
+  * Merge "Avoid fatal error if ICE registers are not defined"
+  * Merge "md: dm-default-key: Fix IV with set_dun flag defined"
+  * Merge "clk: qcom: dispcc: Add support for dispcc driver for KHAJE"
+  * Merge "phy-msm-usb: Add mutex for protecting msm_otg_reset"
+  * Merge "diag: Add debug logs while reading masks into userspace"
+  * Merge "defconfig: khaje: Add support for clock controllers"
+  * Merge "diag: Update log and event mask code ranges"
+  * Merge "netfilter: nf_conntrack_h323: lost .data_len definition for Q.931/ipv6"
+  * Merge "HID: make arrays usage and value to be the same"
+  * Merge "md: dm-default-key: Override dun value for selected bios"
+  * Merge "FM: Reduce high scan time"
+  * Merge "soc: qcom: Add check to handle out of bound access"
+  * Merge "mmc: core: Add at least 3 mclk cycle delay before next command after ACMD41"
+  * Merge "leds: led-class: Retain the latest user brightness request"
+  * Merge "defconfig: Add HSUSB PHY configurations to Khaje"
+  * Merge "usb: dt-bindings: Add USB QMP PHY registers definition for Khaje"
+  * Merge "msm: adsprpc: Remove bad ioctl log"
+  * Merge "dt-bindings: msm: Add bindings for flash type"
+  * Merge "msm: ipa: Fix array out of bound and use after NULL check"
+  * Merge "pinctrl: qcom: Add support for Khaje SoC pin control"
+  * Merge "defconfig: disable debug configs"
+  * Merge "defconfig: khaje: Enable khaje pinctrl"
+  * Merge "mhi: core: Prevent doorbell with invalid tre"
+  * Merge "pinctrl: Add wakeup GPIO register and bit information for khaje"
+  * Merge "msm: kgsl: Remove sysfs entries after releasing memory"
+  * Merge "ANDROID: Incremental fs: Set credentials before reading/writing"
+  * Merge "input: touchscreen: nt36xxx: Add Chip id and firmware"
+  * Merge "pinctrl: msm: add range of reserved gpio for Khaje"
+  * Merge "pinctrl: Update PINCTRL macro definition for Khaje"
+  * Merge "clk: qcom: khaje: Update freq_tbl and pll configurations"
+  * Merge "leds: add initial driver for AW2016 LED device"
+  * Merge "defconfig: Enable AW2016 LED driver for khaje"
+  * Merge "include: uapi: Add QBG UAPI headers"
+  * Merge "dt-bindings: msm: Add bindings for flash type"
+  * Merge "power: qpnp-qg: Add support to clear soh upon first profile load"
+  * Merge "mmc: cqhci: Handle cqhci crypto configurations correctly"
+  * Merge "msm: kgsl: Keep private intact until last refcount is put"
+  * Merge "msm: kgsl: Make sure gpu-speed-bin-vectors has the correct size"
+  * Merge "msm: adsprpc: Handle UAF in process shell memory"
+  * Merge "clk: qcom: mmcc: Change halt to halt_voted for SDM660"
+  * Merge "clk: qcom: gcc: Add halt check for MSS clocks for SDM660"
+  * Merge "Change the subprocess argument to fix the build issue"
+  * Merge "coresight-tmc-etr: Fix deadlock issue while switching mode"
+  * Merge "Revert "clk: qcom: Add enable_safe_config for gfx3d_clk_src""
+  * Merge "usb: dwc3: Use pwr_evt_irq to wakeup if dp/dm directly connected to GIC"
+  * Merge "soc: qcom: Return correct error code when program_key fails fails"
+  * Merge "clk: qcom: gcc: Correct the frequencies in freq_tbl for SDM439"
+  * Merge "clk: qcom: gcc: Add GPLL6 fixed factor support for qm215"
+  * Merge "defconfig: arm64: msm: Enable MSM_DEBUG_LAR_UNLOCK for msm8937"
+  * Merge "defconfig: disable per-cgroup pressure tracking"
+  * Merge "dcc_v2: Control the cti trigger of each link list individually"
+  * Merge "power: smblite: Fix max_limit_ma for smblite"
+  * Merge "msm: kgsl: Update GMU FW version for A619 GPU"
+  * Merge "serial: msm_geni_serial: Reduce wait for transfer delay"
+  * Merge "msm: ADSPRPC: Fix deadlock during SSR"
+  * Merge "clk: qcom: rcg2: Force enable the RCG before update for GFX"
+  * Merge "clk: qcom: debugcc: Add cpucc debugcc support for SDM439"
+  * Merge "clk: qcom: cpu: Add support to L2 PC latency for SDM429/39"
+  * Merge "msm: ipa3: Fix to prevent Integer Overflow"
+  * Merge "clk: qcom: khaje: Update clock changes for GCC/GPUCC/DISPCC"
+  * Merge "defconfig: Enable refgen regulator driver for khaje"
+  * Merge "clk: qcom: alpha-pll: Update Alpha PLL width for Zonda PLL"
+  * Merge "include: uapi: Add support for 128x32 alignment of NV12"
+  * Merge "cnss2: Add code to do PCIe L2 suspend during shutdown"
+  * Merge "diag: Update log and event mask code ranges"
+  * Merge "serial: msm_geni_serial: Bailout from suspend if RX data is pending"
+  * Merge "defconfig: Enable power delivery on Khaje"
+  * Merge "From bbfaa7d36c1eb465f120f2a3dfe25c1fe022195d Mon Sep 17 00:00:00 2001 From: KaiChieh Chuang <kaichieh.chuang@mediatek.com> Date: Thu, 7 Mar 2019 07:51:09 +0800 Subject: [PATCH] ASoC: dpcm: prevent snd_soc_dpcm use after free"
+  * Merge "serial: msm_geni_serial: Reset UART error code to default during shutdown"
+  * Merge "serial: msm_geni_serial: Add Workqueue to dump the registers"
+  * Merge "pinctrl: Update reserved gpio list for Khaje"
+  * Merge "drivers: cpuidle: lpm-levels: Correct missing list initialize"
+  * Merge "usb: gadget: f_rndis: Add 'wceis' flag to indicate 'Wireless' RNDIS"
+  * Merge "usb: f_fs: Free descriptors in func_unbind"
+  * Merge "soc: qcom: dcc: Avoid huge memory allcation"
+  * Merge "config: enable dcc driver"
+  * Merge "defconfig: msm8937_64: Update the defconfigs"
+  * Merge "mmc: host: OTA upgrade scenario support for multi fs combination"
+  * Merge "soc: qcom: dcc: Avoid dcc_sram_writel overflow"
+  * Merge "msm: ipa3: Enabling the HOLB on USB consumer pipe for APQ target"
+  * Merge "qxr-stdalonevwr: changes for oracle mic bias"
+  * Merge "drivers: can: mcp25xxfd: Remove return 0 for void function"
+  * Merge "msm: kgsl: Fix memory leak for anonymous buffers"
+  * Merge "drivers: rpmh: Always bug_on() upon timeout in rpmh_write_batch()"
+  * Merge "diag: Update log and event mask code ranges"
+  * Merge "clk: qcom: gpucc: Update the post div ops for GPUCC PLL for KHAJE"
+  * Merge "drivers: thermal: Add support for RPM SMD cooling device"
+  * Merge "coresight: tmc: fix spinlock bad magic/usb_qdss_close"
+  * Merge "dt-bindings: Add gpr header required for AR on kona"
+  * Merge "mhi: core: Notify all mhi client's for PCIe link down recovery"
+  * Merge "defconfig: sdm660: Add defconfig changes for camera"
+  * Merge "defconfig: arm: msm: Enable debugcc config for SDM439"
+  * Merge "usb: f_qdss: Flush connect_work in qdss close"
+  * Merge "coresight-tmc-etr: remove mem_lock when call usb_qdss_close"
+  * Merge "Revert "kbuild: force to build vmlinux if CONFIG_MODVERSION=y""
+  * Merge "defconfig: Enable smb1394 driver for khaje"
+  * Merge "cnss2: Add code to notify mhi about link down"
+  * Merge "soc: qcom: socinfo: Add support for kona iot soc-id"
+  * Merge "TREAM: HID: playstation: Track devices in list"
+  * Merge "mmc: sdhci: Avoid dumping registers when SD card removed"
+  * Merge "usb: gadget: Do not disconnect unregistered dev"
+  * Merge "defconfig: arm64: msm: Enable CTI_SAVE_DISABLE for SDM660"
+  * Merge "clk: qcom: gpucc-khaje: Remove NOM_L1 fmax corner"
+  * Merge "Revert "mmc: sdhci-msm: Add support to vote for vdd io parent regulator""
+  * Merge "futex: Ensure the correct return value from futex_lock_pi()"
+  * Merge "mmc: sdhci-msm: Switch to required pad voltage for vbias bypass"
+  * Merge "defconfig: Enable thermal emergency poweroff delay"
+  * Merge "msm: adsprpc: Protect maps using map mutex"
+  * Merge "msm: ipa3: Changes to check disconnect in progress while sending data"
+  * Merge "USB: diag: Add check for ctxt in usb_diag_request_size()"
+  * Merge "usb: phy: Reset PHY while disabling dpdm regulator"
+  * Merge "f2fs: fix the periodic wakeups of discard thread"
+  * Merge "msm: ipa3: Enable hardbyte limit for WAN consumer pipe"
+  * Merge "msm: ipa: update the iommu mapping for WDI rings"
+  * Merge "futex: Handle faults correctly for PI futexes"
+  * Merge "qseecom: Add shmbrdige to allocate memory"
+  * Merge "drivers: thermal: virtual-sensor: Add new virtual sensor for MSM8917"
+  * Merge "msm: kgsl: Use worker to put refcount on mem entry"
+  * Merge "usb: phy: qusb: Add wrapper function for phy reset"
+  * Merge "defconfig: Enable CONFIG_ION_SYSTEM_HEAP for bengal"
+  * Merge "clk: qcom: gpucc: Update voltage fmax table for GPU clock for KHAJE"
+  * Merge "driver: Fix compilation error with new sdclang 12"
+  * Merge "cnss_utils: Increase unsafe channel max num for 6G"
+  * Merge "msm: kgsl: Keep the context alive until its fences signal"
+  * Merge "dma-mapping-fast: Fix sg-list length calculation in fast_smmu_unmap_sg()"
+  * Merge "f2fs: change to use rwsem for cp_mutex"
+  * Merge "cnss2: Assert on FW memory allocation failure"
+  * Merge "usb: pd: Clear vdm_tx if SVDM message is sent on SOP'"
+  * Merge "irqchip: mpm: Add mpm mapping for Khaje"
+  * Merge "defconfig: msm: Enable RPM SMD cooling device driver for KHAJE"
+  * Merge "coresight: byte-cntr: Add ETR status check in bypass notifier"
+  * Merge "serial: msm_geni_serial: Enable SW flow on in runtime suspend"
+  * Merge "coresight: byte-cnter: Add ETR status check in bypass notifier"
+  * Merge "coresight: byte-cnter: limit error log output"
+  * Merge "Revert "ANDROID: net: ipv4: sysfs_net_ipv4: Add sysfs-based knobs for controlling TCP window size""
+  * Merge "FM: mutex changes modified"
+  * Merge "clk: qcom: debugcc: Remove the gcc_camss_camnoc clocks"
+  * Merge "cnss_utils: Update the copyright years of file to 2017, 2019-2021"
+  * Merge "msm: ipa3: Fix to handle zero length frag skb packet"
+  * Merge "mhi: core: Avoid race condition mhi channel prepare and M0 event"
+  * Merge "byte-cntr: Don't write csr register when byte-cntr is disabled"
+  * Merge "arm64: defconfig: Set qrtr wakeup for lito"
+  * Merge "ANDROID: xt_qtaguid: fix UAF race"
+  * Merge "soc: qcom: smsm: Add wakeup capable flags to SMSM IRQ"
+  * Merge "Revert "qseecom: Add shmbrdige to allocate memory""
+  * Merge "fbdev: msm: Avoid runtime sus/res for DP/HDMI"
+  * Merge "f2fs: don't sleep while grabing nat_tree_lock"
+  * Merge "uapi: Add UAPI headers for slatecom_interface driver"
+  * Merge "soc: qcom: secure_buffer: Fix the parameter passing to dmac_flush_range"
+  * Merge "msm: adsprpc: Allocate buffer taking NULL byte into consideration"
+  * Merge "phy: msm: usb: Check VBUS state before accessing registers in suspend"
+  * Merge "rpmsg: glink: do not break from interrupt handler"
+  * Merge "power: supply: qpnp-smb5: specify different ICL for QC2 9V/12V level"
+  * Merge "defconfig: kona: Add CONFIG_AQFWD for RB5 board"
+  * Merge "regulator: qcom_pm8008-regulator: add support for PMIC PM8010"
+  * Merge "block: pm: Fix possible unbalanced nr_pending"
+  * Merge "cnss2: Update board data file name for certain RF chip ID"
+  * Merge "usb: f_mtp: Don't handle OS descriptors from MTP driver"
+  * Merge "dwc3-msm: Move override usb speed functionality outside edev check"
+  * Merge "soc: qcom: smem: Update size of legacy partition"
+  * Merge "msm: synx: fix synx_release_core race condition"
+  * Merge "soc: qcom: Set QOS only to silver cluster"
+  * Merge "msm: synx: acquire ref of synx handle in each function"
+  * Merge "msm: ipa3: increasing the uC interrupt timeout value"
+
+  [ Mukesh Kumar Savaliya ]
+  * serial: msm_geni_serial: Bypass Flow control lines from termios
+  * spi: spi-geni-qcom: Set IOEB for MHI on SPI RX only case
+  * i2c: i2c-qcom-geni: Change the high and low time for SCL
+
+  [ Jagadeesh Ponduru ]
+  * msm: ipa3: increasing the uC interrupt timeout value
+
+  [ Kamal Agrawal ]
+  * msm: kgsl: Avoid flooding kernel log with invalid ioctl errors
+  * msm: kgsl: Remove debugfs directory inside lock
+  * msm: kgsl: Remove sysfs entries after releasing memory
+  * msm: kgsl: Fix memory leak for anonymous buffers
+  * msm: kgsl: Fix out of bound write in adreno_profile_submit_time
+
+  [ Bavyasritha Alahari ]
+  * soc: qcom: Set QOS only to silver cluster
+
+  [ Mayank Rana ]
+  * usb: dwc3: gadget: Check controller status with endpoint enable/disable
+  * dwc3-msm: Move override usb speed functionality outside edev check
+
+  [ Yue Ma ]
+  * cnss2: Increase prealloc table to satisfy latest driver requirement
+  * cnss2: Add support to populate device memory information
+  * cnss2: Add new API to get QMI related timeouts
+  * cnss2: Use unified API to get RDDM and recovery timeouts
+  * cnss2: Update board data file name for certain RF chip ID
+
+  [ Kavya Nunna ]
+  * power: smb5-lib: Fix race conditions for typec power role
+  * defconfig: Enable AW2016 LED driver for khaje
+  * power: qpnp-qg: Add support to clear soh upon first profile load
+  * power: smblite: Fix max_limit_ma for smblite
+  * defconfig: Enable refgen regulator driver for khaje
+  * defconfig: Enable smb1394 driver for khaje
+  * platform: qpnp-revid: Add REVID support for PM8010
+
+  [ David Collins ]
+  * regulator: qcom_pm8008: allow multiple PM8008 instances with unique names
+  * regulator: qcom_pm8008-regulator: add support for PMIC PM8010
+
+  [ Can Guo ]
+  * scsi: ufs-qcom: Add one vendor specific sysfs group
+  * block: pm: Fix possible unbalanced nr_pending
+
+  [ Pratham Pratap ]
+  * usb: gadget: uvc: Update frame size as per frame type
+  * usb: phy: qusb2: Update tune value for host mode
+  * usb: pd: Add support to disable pps capability
+  * usb: gadget: Clear transfer started flag if endxfer cmd times out
+  * usb: dwc3: Issue ENDTRANSFER cmd on ep0 unconditionally
+  * usb: gadget: f_mass_storage: Remove runtime async resume
+  * usb: f_diag: Replace ERROR with pr_err
+  * extcon: Initialize blocking notifier while registering
+  * usb: f_fs: Avoid use-after-free of ffs_data
+  * usb: f_fs: Free descriptors in func_unbind
+  * usb: phy: Reset PHY while disabling dpdm regulator
+  * usb: pd: Clear vdm_tx if SVDM message is sent on SOP'
+  * usb: phy: qusb: Add wrapper function for phy reset
+  * usb: f_fs: Avoid invalid pointer access in ffs_fs_get_tree
+  * usb: f_mtp: Don't handle OS descriptors from MTP driver
+
+  [ Fenglin Wu ]
+  * input: qti-haptics: ensure valid pointer when calling kfree
+  * power: supply: smb1398-charger: disable WIN_OV deglitch for SMB1394
+  * power: supply: qpnp-smb5: specify different ICL for QC2 9V/12V level
+
+  [ Vijayavardhan Vennapusa ]
+  * USB: configfs: Clear deactivation flag in configfs_composite_unbind()
+  * USB: uvc_video: Check for return value before halt bulk endpoint
+  * defconfig: kona: Enable USB UVC drivers
+  * USB: f_uac2: Update terminal types as mic and speaker
+  * USB: gadget: Add support for superspeed plus for UAC2 & UVC
+  * USB: pd: Restart host mode in high speed if no usb3 & dp concurrency
+  * USB: pd: Add support for enabling PD2.0 only as source
+  * USB: gadget: f_fs: Allocate extra buffer for IN endpoint
+  * USB: f_fs: Avoid NULL pointer dereference during epfile_io()
+  * USB: dwc3: gadget: Increase TX fifo size for isochronous endpoint
+  * USB: uvc: Fix video quality issues for streaming video over USB
+  * USB: dwc3: gadget: Queue data for 16 micro frames ahead in future
+  * f_uac2: increase number of requests to 32 for UAC2
+  * USB: diag: Add check for ctxt in usb_diag_request_size()
+  * USB: phy: msm: Apply DP pulse for CDP during bootup from sm_work
+  * phy: msm: usb: Fail suspend if psy_type is USB or USB_CDP
+  * phy: msm: usb: Check VBUS state before accessing registers in suspend
+
+  [ Prabha ]
+  * msm: adsprpc: Allocate buffer taking NULL byte into consideration
+
+  [ Madhuri Medasani ]
+  * dt-bindings: clock: Add support for KHAJE clock ids
+  * clk: qcom: gcc-khaje: Add GCC support for KHAJE
+  * clk: qcom: gpucc: Add Graphics Clock controller for KHAJE
+  * clk: qcom: dispcc: Add support for dispcc driver for KHAJE
+  * clk: qcom: debugcc: Add support for Debugcc for KHAJE
+  * clk: qcom: khaje: Update freq_tbl and pll configurations
+  * clk: qcom: khaje: Update clock changes for GCC/GPUCC/DISPCC
+  * clk: qcom: gpucc-khaje: Remove NOM_L1 fmax corner
+  * clk: qcom: gpucc: Update voltage fmax table for GPU clock for KHAJE
+  * clk: qcom: debugcc: Remove the gcc_camss_camnoc clocks
+  * clk: qcom: debugcc: Remove the gcc_camss_camnoc clocks
+
+  [ Nirmal Abraham ]
+  * clk: qcom: mdss: update mdss-dsi-28lpm clk names
+  * sde: rotator: use shared lock while accessing vbif
+  * msm: sde: Update rotator OT settings for sdm660
+  * dt-bindings: clock: Add mdss-28nm-pll-clk for legacy targets
+  * clk: qcom: mdss: Update VCO Clk enums for mdss-dsi-28lpm
+  * defconfig: Enable MDSS PLL config for msm8937_32
+  * defconfig: Enable MDSS PLL for msm8937
+  * fbdev: msm: Handle rotator init failure correctly
+  * msm: mdss: clear fences in ESD panel dead scenario
+  * fbdev: msm: Increment commit count during null commit
+  * clk: qcom: mdss: Fix flicker issue at early boot of kernel
+  * fbdev: msm: Avoid runtime sus/res for DP/HDMI
+
+  [ Kiran Gunda ]
+  * leds: qpnp-flash-v2: Fix out-of-bound array access
+  * backlight: qcom-spmi-wled: Change the SYNC toggle sequence
+  * power: smb5-lib: Query POWER_SUPPLY_PROP_VOLTAGE_MAX_DESIGN
+  * regulator: qpnp-lcdb: Disable step voltage ramp for PM8150L V3
+  * backlight: qcom-wled: Add "qcom,sync-dly" device tree property
+  * uapi: Add UAPI headers for slatecom_interface driver
+
+  [ Vivek Golani ]
+  * diag: Enable diag over rpmsg communication for modem
+  * diag: Handle drops for diag over rpmsg
+  * diag: Acquire spinlock for list delete operation
+  * diag: Enable diag over rpmsg communication for adsp
+  * diag: Enable graceful transfer of transport
+  * rpmsg: qcom_smd: Ensure ordering of channel info updates
+  * diag: Update log and msg mask code ranges
+  * rpmsg: qcom_smd: Add check for remote state in send api
+  * diag: Add debug logs while reading masks into userspace
+  * rpmsg: qcom_smd: Return error if receive callback is not present
+  * diag: Update log and event mask code ranges
+  * soc: qcom: bam_dmux: Skip disconnect call on bootup
+  * diag: Update log and event mask code ranges
+  * diag: Update log and event mask code ranges
+  * soc: qcom: smem: Update size of legacy partition
+  * soc: qcom: smsm: Add wakeup capable flags to SMSM IRQ
+
+  [ Jaegeuk Kim ]
+  * f2fs: fix deadlock between quota writes and checkpoint
+  * f2fs: prepare a waiter before entering io_schedule
+  * f2fs: don't sleep while grabing nat_tree_lock
+
+  [ Satish Kodishala ]
+  * Add support for new versions for BT chip
+  * Ignore -106 error while opening channel
+
+  [ Mao Jinlong ]
+  * byte-cntr: Don't write csr register when byte-cntr is disabled
+
+  [ Sarannya S ]
+  * kernel: driver: Added support msm_smd_pkt driver
+  * drivers: char: add stream like read support
+  * arm64: defconfig: Set qrtr wakeup for lito
+
+  [ Chris Lew ]
+  * soc: qcom: smp2p: Add proper retrigger detection
+  * net: qrtr: Make wakeup timeout configurable
+
+  [ Vivek Pernamitta ]
+  * msm: pci: print PCIE LTSSM state at DRV suspend and resume
+  * mhi: core: Check PCIe link status before accessing MHI registers
+  * msm: pcie : Notify client driver on reading FF's
+  * msm: pcie : Extend link recovery for config space access failure
+  * mhi: core: Notify all mhi client's for PCIe link down recovery
+  * mhi: core: Avoid race condition mhi channel prepare and M0 event
+
+  [ Sumukh Hallymysore Ravindra ]
+  * msm: synx: acquire ref of synx handle in each function
+
+  [ Ashok Vuyyuru ]
+  * msm: ipa3: Fix to null pointer access
+  * msm: ipa: fix race condition on PM vote on sys pipes
+  * msm: ipa3: Fix to change the tag process timeout value in cleanup
+  * msm: ipa3: Changes to check disconnect in progress while sending data
+  * msm: ipa3: Enable hardbyte limit for WAN consumer pipe
+  * msm: ipa3: Fix to handle zero length frag skb packet
+
+  [ Mohammed Siddiq ]
+  * cnss2: Fix KW issues for pointer check and variable init
+  * cnss2: Add code to handle idle-restart failure gracefully
+  * cnss2: Add delay for pci link training retries
+  * cnss2: Add code to fix a print error in update timestamp api
+  * cnss2: Dump mhi debug registers on receiving mhi WAKE event cb
+  * cnss2: WAR to trigger self-recovery for link recover callback
+  * Revert "cnss2: Dump mhi debug regs on receiving mhi WAKE event cb"
+  * cnss2: Add CNSS wrapper function for msm_pcie_reg_dump()
+  * cnss2: Check for BT Enable GPIO in QCA6390
+  * cnss2: Log SW_CTRL GPIO value if PCIe link training fails
+  * cnss2: Add code to notify mhi about link down
+  * cnss2: Add code to do PCIe L2 suspend during shutdown
+  * cnss_utils: Update the copyright years of file to 2017, 2019-2021
+
+  [ Prateek Raj Singh ]
+  * Add support for new comanche 1.3 soc ID
+  * FM: Reduce high scan time
+  * FM: Fix for no sound issue in FM Audio
+  * FM: mutex changes modified
+
+  [ Zhenlin Lian ]
+  * iio: ch101: Return -ENODEV when get expander GPIO failed
+  * drivers: can: mcp25xxfd: Remove return 0 for void function
+  * msm: pcie: Add ASM2806 PCIe device and vendor id
+  * defconfig: kona: Add CONFIG_AQFWD for RB5 board
+  * Revert "qseecom: Add shmbrdige to allocate memory"
+
+  [ Maciej Żenczykowski ]
+  * Revert "RFC: ANDROID: net: ipv4: sysfs_net_ipv4: Fix TCP window size controlling knobs"
+  * Revert "ANDROID: net: ipv4: sysfs_net_ipv4: Add sysfs-based knobs for controlling TCP window size"
+
+  [ Will McVicker ]
+  * HID: make arrays usage and value to be the same
+  * ANDROID: xt_qtaguid: fix UAF race
+
+  [ Tao Zhang ]
+  * coresight-tmc-etr: Fix deadlock issue while switching mode
+  * dcc_v2: Control the cti trigger of each link list individually
+  * coresight: byte-cntr: Add ETR status check in bypass notifier
+
+  [ Gopala Krishna Nuthaki ]
+  * drivers: thermal: Add support for RPM SMD cooling device
+  * defconfig: Enable thermal emergency poweroff delay
+  * defconfig: msm: Enable RPM SMD cooling device driver for KHAJE
+
+  [ Vijayanand Jitta ]
+  * defconfig: Enable CONFIG_ION_SYSTEM_HEAP for bengal
+  * defconfig: Enable CONFIG_ION_SYSTEM_HEAP for bengal
+
+  [ Sahitya Tummala ]
+  * f2fs: allow to change discard policy based on cached discard cmds
+  * f2fs: fix the periodic wakeups of discard thread
+  * f2fs: change to use rwsem for cp_mutex
+  * f2fs: allow to change discard policy based on cached discard cmds
+  * f2fs: fix the periodic wakeups of discard thread
+
+  [ Yuanfang Zhang ]
+  * qdss_bridge: fix use-after-free is on cdev_put
+  * coresight: cti: Solve boot up issue
+  * qdss_bridge: fix memory leak issue
+  * coresight: disable the path when enable source link fail
+  * qdss_bridge: fix kfree issue
+  * soc: qcom: dcc: Avoid dcc_sram_writel overflow
+  * coresight: tmc: fix spinlock bad magic/usb_qdss_close
+  * coresight-tmc-etr: remove mem_lock when call usb_qdss_close
+  * coresight: byte-cnter: Add ETR status check in bypass notifier
+  * coresight: byte-cnter: limit error log output
+
+  [ Swaroop Belur Sudhanva ]
+  * msm: synx: fix synx_release_core race condition
+
+  [ Raghavendra Kakarla ]
+  * drivers: irqchip: qcom: Add MSM8937 pin data for MPM
+  * rpm-smd: Remove redundant spinlocks which are not required
+  * drivers: irqchip: qcom: Add MSM8953 pin data for MPM
+  * irqchip: mpm: Add mpm mapping for Khaje
+
+  [ Naman Padhiar ]
+  * icnss2: Clear SMP2P data during SSR
+  * icnss2: Add handler for SMMU faults
+  * icnss2: Add new ipc context to log smp2p related logs
+  * icnss2: Add support for MHI state info
+  * cnss2: Assert on FW memory allocation failure
+
+  [ Lynus Vaz ]
+  * msm: kgsl: Keep the context alive until its fences signal
+
+  [ Zhenhua Huang ]
+  * mm: cma: Print correct request pages
+  * iommu/arm-smmu: Allocate non-coherent memory for secure pagetables
+  * soc: qcom: secure_buffer: Fix the parameter passing to dmac_flush_range
+
+  [ Pawan Chilka ]
+  * Merge commit '1c2af547a077fda63fd73b73d3f0fc21e19a08cc' into HEAD.
+
+  [ Jianmin Zhu ]
+  * cnss_utils: Increase unsafe channel max num for 6G
+
+  [ Isaac J. Manjarres ]
+  * dma-mapping-fast: Fix sg-list length calculation in fast_smmu_unmap_sg()
+
+  [ Monika Singh ]
+  * crypto: Fix possible stack out-of-bound error
+  * qseecom: Add flush_work based on flag
+  * qseecom: Add shmbrdige to allocate memory
+
+  [ Pankaj Gupta ]
+  * msm: kgsl: Fix snapshot collection for ib1
+  * msm: kgsl: Use worker to put refcount on mem entry
+
+  [ Manaf Meethalavalappu Pallikunhi ]
+  * drivers: thermal: qcom: Add driver to modify thermal zone based on efuse
+  * defconfig: msm: enable thermal efuse driver for kona iot
+  * drivers: thermal: virtual-sensor: Add new virtual sensor for MSM8917
+
+  [ Thomas Gleixner ]
+  * futex: Ensure the correct return value from futex_lock_pi()
+  * futex: Replace pointless printk in fixup_owner()
+  * futex: Provide and use pi_state_update_owner()
+  * futex: Simplify fixup_pi_state_owner()
+  * futex: Handle faults correctly for PI futexes
+
+  [ Swetha Chikkaboraiah ]
+  * ARM: qcom: Add board config support for msm8917
+  * soc: qcom: socinfo: Add support for msm8917 soc-id
+  * pinctrl: Add support for msm8917 pinctrl
+  * defconfig: Initial defconfig files for MSM8937_32go
+  * defconfig: Enable EXT4 configs
+  * msm: ipa: Enable wdi3 API in ipa3 config
+  * defconfig: Enable chipidea USB controller configs
+  * defconfig: enable PSI config for MSM8937_32go
+  * uio: msm_sharedmem: By pass failure for hyp_assign_phys
+  * soc: qcom: Add support for MSM_TZ_SMMU
+  * drivers: soc: qcom: Fix compilation errors
+  * defconfig: Initial defconfig files for MSM8937_32
+  * defconfig: Enable USB BAM configs
+  * soc: qcom: Enable  MSM_TZ_SMMU msm8937
+  * defconfig: Initial defconfig files for MSM8937_64
+  * defconfig: Enable USB BAM and SMD configs
+  * defconfig: Enable USB BAM and SMD configs
+  * usb: gadget: Add snapshot of USB RMNET Function driver
+  * defconfig: Enable MSM8937 and SDM439 config
+  * defconfig: Enable SDM439 config
+  * defconfig: Enable MSM8937 and SDM439 config
+  * defconfig: arm64: Enable CONFIG_HID_NINTENDO for QM215
+  *  msm: ipa2: free the skb
+  * defconfig: Enable SDM429 configs
+  * defconfig: Enable SDM429 configs
+  * defconfig: Enable SDM429 configs
+  * defconfig: disable debug configs
+  * defconfig: Enable remaining defconfigs
+  * defconfig: msm8937_64: Update the defconfigs
+  * driver: Fix compilation error with new sdclang 12
+
+  [ Jeya R ]
+  * msm: ADSPRPC: Reset debug buffer allocation check flag
+  * msm: ADSPRPC: Add check to avoid out of bound scenario
+  * msm: adsprpc: null pointer check for sctx
+  * msm:ADSPRPC :Fix to avoid Use after free in fastrpc_internal_munmap
+  * msm: adsprpc: overflow vulnerability by race condition in adsprpc driver
+  * msm: ADSPRPC: Add extra checks for Unsigned request
+  * msm: adsprpc: Remove bad ioctl log
+  * msm: adsprpc: Handle UAF in process shell memory
+  * msm: adsprpc: Lock list before removing node
+  * msm: adsprpc: Protect maps using map mutex
+
+  [ Ajay Agarwal ]
+  * usb: phy: Add snapshot of PHY msm usb driver
+  * usb: gadget: Setup DMA ops for OTG's gadget devices
+  * usb: dwc3-msm: Enable pwr_evt_irq for wakeup after LPM is done
+  * USB: f_diag: Report Max request size as 16k for ChipIdea
+
+  [ Ram Prakash Gupta ]
+  * scsi: ufshcd: Fix double release of hba
+  * mmc: sdio: Retune sdio after resume
+  * Revert "mmc: sdhci-msm: Add support to vote for vdd io parent regulator"
+  * mmc: sdhci-msm: Add vbias bypass specific hw WA flag
+  * mmc: sdhci-msm: Switch to required pad voltage for vbias bypass
+
+  [ Sarthak Garg ]
+  * mmc: core: Set cqe_enabled flag correctly
+  * mmc: cmdq_hci: Notify sdhci for enhanced strobe
+  * mmc: sdhci: Avoid dumping registers when SD card removed
+
+  [ Hemant Kumar ]
+  * mhi: core: Fix find_last_bit() usage
+  * usb: gadget: Do not disconnect unregistered dev
+
+  [ Chris Ye ]
+  * HID: add HID_QUIRK_INCREMENT_USAGE_ON_DUPLICATE for Gamevice devices
+
+  [ Kishor Krishna Bhat ]
+  * defconfig: Enable memory cgroup config
+  * defconfig: kona: Make configs required to pass CTS tests mandatory
+
+  [ Roderick Colenbrander ]
+  * UPSTREAM: HID: playstation: Initial DualSense USB support
+  * UPSTREAM: HID: playstation: Use DualSense MAC address as unique identifier
+  * UPSTREAM: HID: playstation: Add DualSense Bluetooth support
+  * UPSTREAM: HID: playstation: Add DualSense battery support
+  * UPSTREAM: HID: playstation: Add DualSense touchpad support
+  * TREAM: HID: playstation: Track devices in list
+  * BACKPORT: HID: playstation: Add DualSense classic rumble support
+  * UPSTREAM: HID: playstation: Add DualSense accelerometer and gyroscope
+  * BACKPORT: HID: playstation: Report DualSense hardware and firmware version
+  * UPSTREAM: HID: playstation: Fix unused variable in ps_battery_get_property
+  * UPSTREAM: HID: playstation: Add initial DualSense lightbar support
+  * UPSTREAM: HID: playstation: Add microphone mute support for DualSense
+  * UPSTREAM: HID: playstation: Add DualSense player LED support
+
+  [ Colin Ian King ]
+  * UPSTREAM: HID: playstation: Fix array size comparison (off-by-one)
+
+  [ Chetan C R ]
+  * mmc: sdhci-msm: read this reg IPCAT_MINOR_MASK to sdhc host
+  * bindings: clock: qcom: Add support for clock IDs for QM215
+  * clk: qcom: smd-rpm: Add RPM-SMD clock support for QM215
+  * clk: qcom: debugcc: Add debugcc support for QM215
+  * dt-bindings: clock: Add support for CPUCC clock ids for QM215
+  * defconfig: Add clock controller support for QM215
+  * clk: qcom: debugcc: Add cpucc debugcc support for QM215
+  * clk: qcom: gcc: Add GPLL3 derived frequencies for qm215
+  * clk: qcom: gcc: Add gcc-mdss driver node support for QM215
+  * clk: qcom: smd-rpm: Add RPM-SMD clock support for SDM429
+  * clk: qcom: clk-pll: Round off req_rate in determine rate
+  * clk: qcom: gcc: Add GCC driver node support for SDM429
+  * clk: qcom: gcc: Change rate max values for SDM439
+  * clk: qcom: Add enable_safe_config for gfx3d_clk_src
+  * Revert "clk: qcom: Add enable_safe_config for gfx3d_clk_src"
+  * clk: qcom: mmcc: Change halt to halt_voted for SDM660
+  * clk: qcom: gcc: Add halt check for MSS clocks for SDM660
+  * clk: qcom: gcc: Add GPLL6 fixed factor support for qm215
+  * clk: qcom: gcc: Correct the frequencies in freq_tbl for SDM439
+  * clk: qcom: debugcc: Add cpucc debugcc support for SDM439
+  * clk: qcom: rcg2: Force enable the RCG before update for GFX
+  * clk: qcom: Add LPM Latency support for CPU clocks
+  * dt-bindings: clock: Add support for CPUCC clock ids for SDM439
+  * clk: qcom: cpu-sdm: Add cpu clock driver for SDM439
+  * defconfig: arm: msm: Enable debugcc config for SDM439
+  * defconfig: arm64: msm: Enable CTI_SAVE_DISABLE for SDM660
+
+  [ Xiao Li ]
+  * soc: qcom: socinfo: Add support for kona iot soc-id
+
+  [ Vandana Jain ]
+  * msm: camera: QM215 delay during power up sequence
+  * msm: camera: Update csiphy data rate
+  * msm: camera: Update SDM439 csiphy driver
+  * msm: camera: Add reset logic for snps phy
+  * camera: smmu: fix for incorrect populated sids
+  * msm: camera: Add gpio based flash driver support
+  * defconfig: sdm660: Add defconfig changes for camera
+
+  [ Elson Roy Serrao ]
+  * usb: f_qdss: Flush connect_work in qdss close
+
+  [ Taniya Das ]
+  * clk: qcom: Update parent map to use parent_map struct
+  * clk: qcom: Add enable/disable to clk_regmap_mux_div_ops
+  * clk: qcom: clk-pll: Add support for HF PLL Ops
+  * clk: qcom: clk-alpha-pll: Add support for FSM legacy mode
+  * clk: qcom: clk-pll: Add support for SPM event in PLL
+  * clk: qcom: cpu: Add support to L2 PC latency for SDM429/39
+  * clk: qcom: alpha-pll: Update Alpha PLL width for Zonda PLL
+  * clk: qcom: clk-alpha-pll: Update implementation for Zonda PLL
+  * clk: qcom: gpucc: Update the post div ops for GPUCC PLL for KHAJE
+  * clk: qcom: clk-alpha-pll: Update implementation for Zonda PLL
+  * clk: qcom: gpucc: Update the post div ops for GPUCC PLL for KHAJE
+
+  [ Jun Li ]
+  * mmc: core: Add at least 3 mclk cycle delay before next command after ACMD41
+  * scsi: ufs-qcom: fix the issue of get wrong ufs clk status from sysfs node
+
+  [ Puneeth Prabhu ]
+  * dt-bindings: Add gpr header required for AR on kona
+
+  [ Manoj Prabhu B ]
+  * diag: Add support for querying diagid for wpss subsystem
+  * diag: Read from USB without holding spinlock
+  * diag: Update event and log mask code latest range
+  * diag: Sanitize the mempools with pool data size check
+  * diag: Update event and log mask code ranges
+  * diag: Prevent possible out of bound copy to userspace
+  * diag: Prevent out of bound write while sending dci pkt to remote
+  * diag: Copy length and buffer locally to send to userspace client
+  * diag: Use valid data_source for a valid token
+  * diag: Avoid reallocating if buffer supports hdlc max pkt size
+
+  [ Maulik Shah ]
+  * drivers: rpmh: Always bug_on() upon timeout in rpmh_write_batch()
+
+  [ Srinivasarao P ]
+  * Revert "nl80211: fix non-split wiphy information"
+  * Merge android-4.19-stable.157 (8ee67bc) into msm-4.19
+  * arm64: fix bootloader_memory_limit
+  * defconfig: remove CONFIG_SECURITY_PERF_EVENTS_RESTRICT
+  * defconfig: disable per-cgroup pressure tracking
+  * config: enable dcc driver
+  * Revert "kbuild: force to build vmlinux if CONFIG_MODVERSION=y"
+
+  [ Sivakanth Vaka ]
+  * msm: ipa3: Enabling the HOLB on USB consumer pipe for APQ target
+
+  [ Rajesh Bharathwaj ]
+  * max31760: add support for additional registers
+  * qxr-stdalonevwr: changes for oracle mic bias
+
+  [ Shaoqing Liu ]
+  * soc: qcom: dcc: Avoid huge memory allcation
+
+  [ Mukesh Ojha ]
+  * soc: qcom: dcc: Add snapshot of qcom-dcc driver
+  * soc: qcom: dcc: Use sscanf instead of strlcpy
+
+  [ Anirudh Ghayal ]
+  * power: smb1355: Extend minoff-time and dead-time for SMB1355
+  * power: smb5-lib: Improve the charge-termination WA handling
+  * power: qpnp-smb5: Add DT option to enable JEITA-ARB handling
+  * power: smb5-lib: Add additional check to exit charge-termination WA
+  * power: qpnp-qg: Fix a DT property name
+
+  [ Pruthvi Kurada ]
+  * mmc: host: OTA upgrade scenario support for multi fs combination
+
+  [ Maria Yu ]
+  * msm: Add initial support for msm8953 Kconfig platform
+  * msm: Add initial support for sdm450 Kconfig platform
+  * Kconfig: enable default config of cpu freq qcom for msm8953
+  * ARM: qcom: Add board config support for msm8953
+  * ARM: qcom: Add board config support for sdm450
+  * socinfo: Add socinfo support for sdm450
+  * drivers: cpuidle: lpm-levels: Correct missing list initialize
+
+  [ Chandana Kishori Chiluveru ]
+  * serial: msm_geni_serial: Perform Abort sequence for cancel failure
+  * usb: gadget: composite: Add spinlock protection for usb string descriptor
+  * qcom-geni-se: Avoid dumping of GENI registers in console
+  * serial: msm_geni_serial: Add ioctl for sending uart error codes to BT host
+  * serial: msm_geni_serial: Reduce wait for transfer delay
+  * serial: msm_geni_serial: Bailout from suspend if RX data is pending
+  * serial: msm_geni_serial: Reset UART error code to default during shutdown
+
+  [ Komal Bajaj ]
+  * soc: qcom: Add check to handle out of bound access
+  * pinctrl: msm: add range of reserved gpio for Khaje
+  * pinctrl: Add wakeup GPIO register and bit information for khaje
+  * pinctrl: Update PINCTRL macro definition for Khaje
+  * pinctrl: Update reserved gpio list for Khaje
+
+  [ Liangliang Lu ]
+  * usb: gadget: f_rndis: Add 'wceis' flag to indicate 'Wireless' RNDIS
+
+  [ Ankush Agarwalla ]
+  * include: uapi: Add support for 128x32 alignment of NV12
+
+  [ Piyush Dhyani ]
+  * msm: ipa3: Fix to prevent Integer Overflow
+
+  [ Shilpa Suresh ]
+  * power: smb2: Enable read/writing of Type-C Rp value
+  * rtc: rtc-pm8xxx: add support for PM8916 RTC
+  * leds: vibrator: Add snapshot of vibrator driver
+  * dt-bindings: iio: Add scale function for QM215 batt therm
+  * iio: spmi-vadc: Add option to specify scale-fn-type in devicetree
+  * include: uapi: Add charger specific headers for QM215
+  * defconfig: Enable CONFIG_MSM_TZ_LOG for 8937-perf
+  * defconfig: sdm660: Add missing coresight configs
+  * defconfig: arm: msm: Enable MSM_DEBUG_LAR_UNLOCK for msm8937
+  * defconfig: arm64: msm: Enable MSM_DEBUG_LAR_UNLOCK for msm8937
+
+  [ Archit Saxena ]
+  * soc: mem_dump: Enable MSM_DEBUG_LAR_UNLOCK for MSM8937
+
+  [ KaiChieh Chuang ]
+  * From bbfaa7d36c1eb465f120f2a3dfe25c1fe022195d Mon Sep 17 00:00:00 2001
+
+  [ Vaibhav Agrawal ]
+  * Set the default slot for Full Disk Encryption key to 31
+  * defconfig: Enable default-key driver for msm8937_32go
+  * defconfig: Enable default-key driver for msm8937_64
+  * defconfig: Enable default-key driver for msm8937_32
+  * soc: qcom: Return correct error code when program_key fails fails
+
+  [ Vamsi krishna Gattupalli ]
+  * msm: ADSPRPC: Substitute vfs check with flags
+  * msm: adsprpc: Clean DMA handles maps in case of  error
+  * msm: ADSPRPC: Fix deadlock during SSR
+
+  [ Rohith Kollalsi ]
+  * usb: dwc3: gadget: Replace dev with its parent sysdev in ep_disable
+  * usb: gadget: f_cdev: Fix use after free of port in f_cdev
+  * usb: dwc3: Use pwr_evt_irq to wakeup if dp/dm directly connected to GIC
+
+  [ Suren Baghdasaryan ]
+  * BACKPORT: cgroup: make per-cgroup pressure stall tracking configurable
+
+  [ Sunil Khatri ]
+  * msm: kgsl: Add multiple fuses based speed bin
+  * msm: kgsl: Make sure gpu-speed-bin-vectors has the correct size
+
+  [ Bharat Pawar ]
+  * Change the subprocess argument to fix the build issue
+
+  [ Shyam Kumar Thella ]
+  * include: uapi: Add QBG UAPI headers
+
+  [ Hui Liu ]
+  * leds: add initial driver for AW2016 LED device
+  * leds: aw2016: update breath sysfs node name
+
+  [ Bill Peckham ]
+  * Use environment variable to find unifdef tool
+
+  [ Soumil Shah ]
+  * kernel_headers: Explicitly run headers_install under 'sh'
+
+  [ shiwgupt ]
+  * dt-bindings: msm: Add bindings for flash type
+  * dt-bindings: msm: Add bindings for flash type
+
+  [ Hareesh Gundu ]
+  * msm: kgsl: Add A504 GPU support for SDM429
+  * msm: kgsl: Keep private intact until last refcount is put
+
+  [ Udipto Goswami ]
+  * usb: dwc3: Enable parkmode for Gen1 controllers
+  * usb: dwc3: gadget: Prevent double free scenario for cancelled_list
+  * usb: f_qdss: Avoid wait_for_completion if qdss_disable is called
+  * usb_bam: Set default BAM type as DWC3 if not specified
+  * defconfig: Add HSUSB PHY configurations to Khaje
+  * usb: dt-bindings: Add USB QMP PHY registers definition for Khaje
+  * phy-msm-usb: Add mutex for protecting msm_otg_reset
+  * defconfig: Enable power delivery on Khaje
+
+  [ Ravikanth Tuniki ]
+  * input: touchscreen: nt36xxx: Add Chip id and firmware
+
+  [ Paul Lawrence ]
+  * ANDROID: Incremental fs: Set credentials before reading/writing
+
+  [ Shadab Naseem ]
+  * soc: qcom: socinfo: Add soc information for khaje
+  * msm: Add initial support for Khaje in Kconfig platform
+  * defconfig: Enable ARCH_KHAJE
+  * pinctrl: qcom: Add support for Khaje SoC pin control
+  * defconfig: khaje: Enable khaje pinctrl
+
+  [ Greg Kroah-Hartman ]
+  * ANDROID: Incremental fs: fix up attempt to copy structures with READ/WRITE_ONCE
+
+  [ Phanindra Babu Pabba ]
+  * Avoid fatal error if ICE registers are not defined
+  * mmc: cqhci: Handle cqhci crypto configurations correctly
+
+  [ santosh ]
+  * disp: uapi: drm: Add fsc format modifier
+
+  [ Sriharsha Allenki ]
+  * usb: gadget: Add support for UVC function
+  * usb: gadget: uvc: Add support for UVC 1.5
+  * usb: gadget: f_uvc: Fix incorrect frame indexing
+  * usb: dwc3: core: Destroy ipc log context on remove
+  * usb: gadget: f_uvc: Fix crash on disconnect/connect during streaming
+  * usb: gadget: f_uvc: Fix video streaming quality issues
+  * usb: gadget: gsi: Ensure the doorbell is blocked before suspend
+  * mhi: dev: netdev: Set the mac header to 0 for skbs
+  * mhi: core: Prevent doorbell with invalid tre
+
+  [ Mohammed Javid ]
+  * msm: ipa: Fix pointer checked for NULL may be used
+  * msm: ipa: Fix to check only reset IPA stats can have data as NULL
+  * msm: ipa: Fix array out of bound and use after NULL check
+
+  [ Ram Chandrasekar ]
+  * leds: led-class: Retain the latest user brightness request
+
+  [ Mohan Pallaka ]
+  * leds: led-class: add support for max_brightness store
+
+  [ Neeraj Soni ]
+  * md: dm-default-key: Fix IV with set_dun flag defined
+  * md: dm-default-key: Override dun value for selected bios
+
+  [ Jagadeesh Kona ]
+  * clk: qcom: clk-debug: Add support to dump GDSC registers
+  * dt-bindings: clock: gcc-khaje: Add support for USB3 MUX and BCR
+  * defconfig: khaje: Add support for clock controllers
+
+  [ Althaf Neelanchirayil ]
+  * clk: qcom: mdss: Enable mdss 28lpm pll driver
+  * msm: mdss: update MDSS DSI ULPS configuration
+  * dt-bindings: clock: Add 12nm clock device tree bindings
+  * msm: mdss: Fix race condition while iommu mapping from DSI flow
+  * fbdev: msm: update event callback function to perform ESD check
+  * fbdev: msm: Enable mdss rotator driver
+  * fbdev: msm: Avoid race condition while iommu mapping from DSI flow
+
+  [ Jilai Wang ]
+  * msm: npu: Prevent unpaired power vote/unvote via sysfs node
+  * msm: npu: Don't send interrupt if command has been consumed
+  * msm: npu: Use spinlock for ipc write to avoid context switch
+
+  [ Deepak Kumar ]
+  * msm: kgsl: Deregister gpu address on memdesc_sg_virt failure
+  * msm: kgsl: Change start variable type to int in kgsl_iommu_add_global
+  * msm: kgsl: Access map_count only if entry is successfully allocated
+  * msm: kgsl: Fix nr_removed calculation while reducing pools
+
+  [ Ahmad Masri ]
+  * wil6210: AP should not forward eapol packets
+  * wil6210: Drop plaintext frames on secure network
+  * wil6210: check integrity of received AMSDU packets
+  * wil6210: Drop unicast sub frame if part of a multicast amsdu
+
+  [ Veerabhadrarao Badiganti ]
+  * mmc: sdhci-msm: Skip PWRSAVE_DLL setting for sdcc minor verion 0x4D
+
+  [ Pramod Gurav ]
+  * tty: serial: msm: Add suspend resume support
+
+  [ Manjunatha Madana ]
+  * defconfig: msm: Enable smd pkt driver for QM215/SDM429/439
+  * drivers: char: Fix compilation error for smd pkt driver
+  * defconfig: Enable config CONFIG_UTS_NS for msm8937_32
+
+  [ Guru Das Srinagesh ]
+  * power: smb1398: Add support for SMB1394
+
+  [ Raghavendra Ambadas ]
+  * clk: qcom: mdss: fix blank / un-blank issue for DSI 12nm pll
+
+  [ Chaitanya Pratapa ]
+  * msm: ipa: Fix considering prefetch buf size when mapping
+
+  [ Anjaneya Prasad Musunuri ]
+  * msm: drm: uapi: add rounded corner uapi
+
+  [ Vasantha Balla ]
+  * vidc_3x: Use static table governor for bus voting
+  * vidc_3x: Change to avoid unloading firmware
+
+  [ Armaan Siddiqui ]
+  * msm: gsi: Using kzalloc instead of devm_kzalloc
+  * msm: ipa: fix potential race condition ioctls
+  * msm: ipa: Send actual DL flt rule length to Q6
+  * msm: ipa3: Fix to copy num of rules from user space
+  * ipa: Remove overwrite copy
+
+  [ Vasily Averin ]
+  * netfilter: nf_conntrack_h323: lost .data_len definition for Q.931/ipv6
+
+  [ Vishnu Satheesh ]
+  * defconfig: arm: Enable CONFIG_HID_NINTENDO for QM215
+  * defconfig: Enable config CONFIG_DEBUG_FS for msm8937_64
+
+  [ Asutosh Das ]
+  * sysfs: ufs-qcom: Add sysfs entries for flashpvl
+
+  [ Puranam V G Tejaswi ]
+  * msm: kgsl: Change vma->vm_file to shmem file
+  * msm: kgsl: Use pid struct to find the process to reclaim
+  * msm: kgsl: Change vma->vm_file to shmem file
+  * msm: kgsl: Use pid struct to find the process to reclaim
+  * msm: kgsl: Flush mem workqueue and retry if failed to find SVM region
+
+  [ Anuj Garg ]
+  * soc: qcom: ssr: Enable the irqs before powering up subsystems
+
+  [ Rahul Shahare ]
+  * defconfig: msm: Enable dm-snapshot for msm8937_64
+  * defconfig: msm: Enable dm-snapshot for msm8937_32
+  * defconfig: msm: Enable dm-snapshot for msm8937_32go
+  * defconfig: Enable config for msm8937_64
+  * defconfig: msm8937_32go: Disable BUILD_ARM64_APPENDED_DTB_IMAGE flag
+  * defconfig: msm8937_64: Disable BUILD_ARM64_APPENDED_DTB_IMAGE flag
+  * defconfig: msm8937_32: Disable BUILD_ARM64_APPENDED_DTB_IMAGE flag
+  * defconfig: Enable config for msm8937_32
+  * ARM: defconfig: Enable config for msm8937_32go
+
+  [ Jann Horn ]
+  * tty: Fix ->pgrp locking in tiocspgrp()
+
+  [ Jeff Vander Stoep ]
+  * Revert "ANDROID: security,perf: Allow further restriction of perf_event_open"
+
+  [ Sujeet Kumar ]
+  * USB: composite: Increase the IN endpoint buffer allocation
+
+  [ ChandanaKishori Chiluveru ]
+  * USB: f_fs: Increase the IN endpoint buffer allocation
+  * USB: f_serial/f_acm: Increase the IN endpoint buffer allocation
+
+  [ Jishnu Prakash ]
+  * regulator: qpnp-lcdb: fix race between SC interrupt and lcdb enable
+  * qcom: fg-memif: correct timeout condition for memory grant
+  * regulator: qpnp-lcdb: Add n_voltages property for LCDB regulators
+  * leds: qpnp-flash-v2: Add support to control flash ramp time
+
+  [ Paras Nagda ]
+  * msm: vidc_3x: correct the flags set for bus mode
+  * msm: vidc_3x: Correct the arguments type to align with format string
+
+  [ Kyle Yan ]
+  * soc: qcom: pil: Reuse carveout region for mdt header
+
+  [ Anmolpreet Kaur ]
+  * smcinvoke: Update the correct parameters and result from qseecom
+  * qseecom: Update correct parameters before sending to smcinvoke
+
+  [ Sharath Chandra Vurukala ]
+  * config: enable new rmnet_data driver
+  * config: enable new rmnet_data driver
+  * config: enable rmnet_data, msm_rmnet_bam driver
+
+  [ phaneendra Reddy ]
+  * radio: iris: Add snapshot of iris FM radio support
+  * RPMSG driver changes for FM in msm-4.19
+  * defconfig: Add Radio_IRIS related config parameter
+  * defconfig: Add Radio_IRIS related config parameter
+  * defconfig: Add Radio_IRIS related config parameter
+
+  [ Lin Bai ]
+  * cnss2: Add update_uevent API to notify CNSS event
+  * cnss2: Add CNSS_BUS_EVENT to report bus info
+
+  [ Sandeep Singh ]
+  * icnss2: change to avoid device crash if RF card is not present
+  * icnss: Allow register/unregister driver execution in serial manner
+  * wcnss: Add wcnss snapshot to msm-4.19
+  * wcnss: Update pm wake api's for 4.19 kernel
+  * defconfig: Add WCNSS related config parameter
+  * icnss2: Avoid qmi register/unregister in case of qmi failure
+  * icnss: Avoid qmi register/unregister in case of qmi failure
+  * defconfig: Enable WCNSS configs
+
+  [ Arun Kumar Neelakantam ]
+  * drivers: char: msm_smd_pkt: Return error in case driver is not ready
+  * rpmsg: qcom_smd: increase bounce buffer size
+  * soc: qcom: bam_dmux: Abort open/close cmd during SSR
+
+  [ priyankar ]
+  * Add support for new HSP version
+
+  [ Lakshay Verma ]
+  * diag: Update log mask code ranges
+
+  [ Prasadarao Durvasula ]
+  * platform: msm: Add USB BAM support to ChipIdea/RMNET
+  * drivers: rpmsg: fix to avoid dump stack in rpm-smd driver
+
+  [ Archana Sriram ]
+  * msm: kgsl: Correct the refcount on current process PID
+  * coresight: Make coresight functions as inline
+  * msm: kgsl: Set correct values for SMMU protect register for A3xx
+  * iommu: Do not set COHERENT flag for secure pagetable allocation
+  * iommu: Update function for ARM_MSM_SECURE io pagetable type
+  * msm: kgsl: Enable content protection for A505 GPU
+
+  [ Charan Teja Reddy ]
+  * iommu/arm-smmu: override writel_relaxed in smmu global address space
+  * arm-smmu: add bitmap for secure context banks
+  * iommu/arm-smmu: add option to enable halt/resume of SMMU
+
+  [ Eric Dumazet ]
+  * tcp: address problems caused by EDT misshaps
+  * tcp: adjust rto_base in retransmits_timed_out()
+
+  [ Yuchung Cheng ]
+  * tcp: always set retrans_stamp on recovery
+  * tcp: create a helper to model exponential backoff
+  * tcp: retry more conservatively on local congestion
+
+  [ Visweswara Tanuku ]
+  * cnss2: Add sysfs support for configuring qtimer sync interval
+
+  [ Eric W. Biederman ]
+  * signal: Avoid corrupting si_pid and si_uid in do_notify_parent
+
+  [ Jiten Patel ]
+  * qseecom: use legacy command for slateapp
+  * fs: crypto: Add support for legacy pfk based FBE
+  * msm: ice: Fix stack-out-of-bound erros on kasan builds
+  * ice: add return value for functions where ICE is disabled
+
+  [ Balakrishna Godavarthi ]
+  * Return Immediately if failed to set to reset gpio state
+  * Don't use gpio_free() for output gpios
+
+  [ Asha Magadi Venkateshamurthy ]
+  * regulator: cpr: add snapshot of cpr-regulator driver
+  * defconfig: Enable CPR Regulator for msm8937go
+  * iio: adc: spmi-vadc: Add adc support for SPF targets
+
+  [ Amar Singhal ]
+  * cfg80211: Adjust 6 GHz frequency to channel conversion
+
+  [ Sudharsan Reddy Yettapu ]
+  * drivers: rpmsg: Add smd driver module at post core init
+  * usb: gadget: Add snapshot of ChipIdea driver
+  * net: ethernet: Add snapshot of RMNET BAM driver
+  * drivers: soc: qcom: Add bam dmux smem state handling
+
+  [ Anjana ]
+  * scsi: ufs: Fix IOCTL error checking for input buffer
+
+  [ raghavendra ambadas ]
+  * fbdev: msm: call pxl clk unprepare during suspend
+  * defconfig: enable MDSS PLL config for MSM8937_32go
+  * clk: qcom: mdss: Add check to read the gdsc status
+  * clk: qcom: mdss: fix blank / unblank for DSI 28nm pll
+
+  [ Vishwanath Raju K ]
+  * iommu/arm-smmu: Do not write to slave side protected context banks
+
+  [ Chinmay Agarwal ]
+  * net/sched: fix race between deactivation and dequeue for NOLOCK qdisc
+
+  [ Ashish Chavan ]
+  * qcom: step-chg-jeita: Add support for jeita fcc scaling
+  * spmi: spmi-pmic-arb-debug: replace ioremap_resource with ioremap
+
+  [ Hyeongseok Kim ]
+  * dm verity: skip verity work on I/O errors when system is shutting down
+
+  [ Prasad Sodagudi ]
+  * ARM: decompressor: avoid speculative prefetch from protected regions
+
+  [ Padmanabhan Komanduru ]
+  * msm: mdss: add support for DSI 12nm PHY in DSI driver
+  * msm: mdss: update DSI ULPS entry/exit sequence
+  * msm: mdss: add support to program of HSTX drivers for DSI 12nm PHY
+  * msm: mdss: update the MDSS DSI ULPS exit sequence
+  * msm: mdss: perform DSI PHY s/w reset for 12nm PHY during unblank
+  * msm: mdss: add support to handle LP_RX_TO/BTA_TO errors for DSI 12nm PHY
+  * msm: mdss: update the power down sequence for DSI 12nm PHY
+  * msm: mdss: update the DSI 12nm PHY programming sequence
+
+  [ Michael Adisumarta ]
+  * msm: ipa: add check to see if pm client is not NULL
+  * msm: ipa: Fix use-after-free in ipa3_alloc_counter_id
+
+  [ Bojun Pan ]
+  * msm: ipa: correct the pointer in idr for FnR stats counter
+
+  [ Kalesh Singh ]
+  * ANDROID: xt_qtaguid: Remove tag_entry from process list on untag
+
+  [ Venkata Prahlad Valluru ]
+  * clk: qcom: mdss: add dsi phy 12nm clock
+  * clk: qcom: mdss: update dsi 12nm clock driver
+
+  [ Nitin LNU ]
+  * qseecom: Add boundary checks between two subsequent fields
+  * qseecom: Update the error val check
+  * qtee_shmbridge: update copyright
+
+  [ Saurabh Sahu ]
+  * dt-bindings: clock: Add support for GCC clock ids for SDM429
+  * clk: qcom: gcc: Add support for GCC clock driver
+  * clk: qcom: cpu-sdm: Add cpu clock driver for SDM
+
+  [ Paras Sharma ]
+  * tty: serial: msm_geni_serial: Resolve race btw stop rx and cancel rx
+
+  [ Akash Asthana ]
+  * serial: msm_geni_serial: Fix false warning for reset failure
+  * tty: serial: msm_geni_serial: Fix timeout for Rx abort
+
+  [ Chirag Khurana ]
+  * msm: mdss: dsi: set backlight handle to NULL in error case
+
+  [ Jingbiao Lu ]
+  * arm64: Kconfig: Add support for msm8937 on msm-4.9
+  * arm64: Kconfig: Add ARCH_SDM439 and ARCH_SDM429 support
+  * soc: qcom: socinfo: Add support for msm8937 soc-id
+  * soc: qcom: socinfo: add support for sdm429 and sdm439
+  * pinctrl: Add support for msm8937 pinctrl
+  * ARM: qcom: Add board config support for msm8937
+  * ARM: qcom: add board config support for sdm439 and sdm429
+
+  [ Pavankumar Kondeti ]
+  * defconfig: set CONFIG_HZ = 250 for Bengal
+  * USB: EHCI: Add MSM Host Controller driver
+
+  [ Deepak Kumar Singh ]
+  * net: qrtr: print error case for qrtr receive
+  * rpmsg: qcom_smd: allow smd create device if remote state is closing
+  * net: qrtr: Excessive logging casuing boot failure
+  * drivers: char: reset signal support for smd channels
+  * net: qrtr: Excessive logging casuing boot failure
+  * rpmsg: glink: do not break from interrupt handler
+
+  [ jionzhao ]
+  * misc: add qrc_core and qrc_uart
+  * misc: add qrc ioctl functions
+
+  [ Srinivas Ramana ]
+  * socinfo: Add socinfo support for msm8953
+
+  [ Gurram Pravalika ]
+  * msm: camera: Fix for HFR120 crash while
+
+  [ Prudhvi Yarlagadda ]
+  * serial: msm_geni_serial: Pull RFR before stop_rx for uart
+  * serial: msm_geni_serial: Correct start rx sequence
+  * rpmsg: smd: Signal the TX channel that smd driver read data
+  * rpmsg: qcom_smd: Add ipc logging for smd driver
+  * rpmsg: qcom_smd: Read data of size greater than fifo size
+  * rpmsg: qcom_smd: Read data of size equal to fifo size
+  * rpmsg: qcom_smd: Add NO_SUSPEND flag for smd edge irq
+
+  [ Santhosh Kumar M ]
+  * rpmsg: qcom_smd: Add GET/SET signal support
+
+  [ Feifei Chen ]
+  * kona_defconfig: Enable hidraw config
+
+  [ Linyu Yuan ]
+  * usb: misc: nb7vpq904m: update suspend and resume function
+
+  [ Vinayak Menon ]
+  * mm: skip speculative path for non-anonymous COW faults
+  * mm: process_reclaim: skip target_vma
+  * mm: process_reclaim: pass pid struct instead of tgid
+  * mm: process_reclaim: skip target_vma
+  * mm: process_reclaim: pass pid struct instead of tgid
+
+  [ Rama Krishna Phani A ]
+  * iio: qcom-rradc: Update logic to monitor health of RRADC peripheral
+
+  [ Mihir Shete ]
+  * cfg80211: export regulatory_hint_user() API
+
+  [ Manu Gautam ]
+  * pci: msm: Add support for linkdown recovery on hot reset
+  * msm: pcie: Restore BME for RC after link_down recovery on SBR
+
+  [ Chaojun Wang ]
+  * drivers: iio: add Makefile and Kconfig for TDK chirp sensor
+  * drivers: iio: enable compile for TDK sensor
+
+  [ Ashay Jaiswal ]
+  * power_supply: Add FG_RESET_CLOCK property
+  * power: qpnp-fg-gen3: Add a property to reset FG BCL device
+
+  [ AnilKumar Chimata ]
+  * qseecom: Check error when allocating coherent buffer
+
+  [ Sayali Lokhande ]
+  * defconfig: Enable Incremental FS support for msm8937_32go
+
+  [ Murthy Nidadavolu ]
+  * media/dvb: Deregister dma buffers fom shmbridge
+
+  [ ynie ]
+  * Merge tag 'refs/tags/TDK-Robotics-RB4-0.1-test3'
+
+  [ Young Hwan Kwak ]
+  * msm: kgsl: Show max gpu temperature
+
+  [ tdk-opensource ]
+  * Initial commit
+  * First ready to use version (no ref to upstream commit)
+  * Preparation for TDK-Robotics-RB5-0.1-test2
+  * Merge pull request #1 from InvenSenseInc/feature/prepare_TDK-Robotics-RB5-0.1-test2
+  * TDK-Robotics-RB5 drivers source code files
+
+  [ Akhil Manikoth Kallankandy ]
+  * fastrpc : fastrpc porting for kernel 4.19 SPF targets
+
+  [ Max Chen ]
+  * wigig_sensing: treat data ready as deep sleep exit when needed
+
+  [ Mahesh Kumar Kalikot Veetil ]
+  * cnss_prealloc: Add a 128kB to prealloc pool
+
+  [ Johannes Berg ]
+  * nl80211: add error messages to nl80211_parse_chandef()
+
+  [ Venkata Manasa Kakarla ]
+  * serial:msm_geni_serial: Handling the cts counter in uart driver
+
+  [ Kai Liu ]
+  * cnss2: retry mhi suspend in case packets are pending in MHI layer
+
+  [ Sridhar Arra ]
+  * diag: Enable diag over rpmsg communication for wcnss
+
+  [ Tingwei Zhang ]
+  * arm/arm64: Kconfig: Add support for qm215
+  * ARM: qcom: Add board config support for qm215
+
+  [ Teng Fei Fan ]
+  * soc: qcom: socinfo: Add supprot for QM215 QRD soc-id
+
+  [ Jordan Crouse ]
+  * msm: kgsl: Stop using memdesc->usermem
+  * msm: kgsl: Protect the memdesc->gpuaddr in SVM use cases
+
+  [ Yunsheng Lin ]
+  * net: sch_generic: fix the missing new qdisc assignment
+
+  [ Amit Kushwaha ]
+  * msm: kgsl: add condition to check gpuhtw_llc support
+
+  [ Aasir Rasheed ]
+  * icnss: Add code to downdload qdss trace config
+  * icnss: Add code to send qdss mode and sysfs interface for qdss
+
+  [ Vijay Navnath Kamble ]
+  * ARM: msm: Add board config support for 32 bit bengal apq iot
+
+  [ Ashish Kori ]
+  * spi: spi-geni-qcom: Configure DFS index and clk before doing set rate
+  * spi: spi-geni-qcom: Calculate transfer timeout dynamically
+
+  [ Sebanti Das ]
+  * Revert "msm: kgsl: Add GPUCC register dumps to A6xx GPU snapshot"
+  * Revert "msm: kgsl: Add GPUCC register dumps to A6xx GPU snapshot"
+
+  [ Subash Abhinov Kasiviswanathan ]
+  * net: qualcomm: rmnet: memset before sending genl response
+
+  [ Hrishikesh Vidwans ]
+  * wil6210: add ability to help debug tx latency
+
+  [ Lingutla Chandrasekhar ]
+  * walt: Add window rollover trace event
+
+  [ Akshay Pandit ]
+  * uapi: ipa: Support uc header proc ctx for DSCP insertion
+
+  [ Alessio Balsini ]
+  * ANDROID: vfs: d_canonical_path for stacked FS
+
+  [ Praveen Kurapati ]
+  * msm: ipa3: Add change to increase timeout value
+
+  [ Peng Wang ]
+  * msm: fan: Add driver to control fan on RB5
+  * defconfig: arm64: msm: enable CONFIG_RB5_FAN_CONTROLLER
+  * msm: driver: Add driver to enable RB5 GPIOs
+  * defconfig: arm64: msm: enable CONFIG_RB5_GPIOS_ENABLE
+
+  [ rbandi ]
+  * HID: qvr: Remove device pointer on disconnect
+
+ -- muralivijay <muralidharan9845@gmail.com>  Sun, 21 May 2023 20:48:16 +0000
+
